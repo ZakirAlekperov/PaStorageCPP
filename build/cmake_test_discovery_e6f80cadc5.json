@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "PasswordEntryTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "StoresTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 5
+        }
+      ]
+    }
+  ]
+}

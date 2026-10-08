@@ -1,0 +1,30 @@
+Start testing: Oct 08 12:46 MSK
+----------------------------------------------------------
+1/1 Testing: PasswordEntryTest.StoresTitle
+1/1 Test: PasswordEntryTest.StoresTitle
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresTitle" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"PasswordEntryTest.StoresTitle" start time: Oct 08 12:46 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PasswordEntryTest.StoresTitle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PasswordEntryTest
+[ RUN      ] PasswordEntryTest.StoresTitle
+[       OK ] PasswordEntryTest.StoresTitle (0 ms)
+[----------] 1 test from PasswordEntryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PasswordEntryTest.StoresTitle" end time: Oct 08 12:46 MSK
+"PasswordEntryTest.StoresTitle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 12:46 MSK

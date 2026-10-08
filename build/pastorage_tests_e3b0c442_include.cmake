@@ -1,0 +1,5 @@
+if(EXISTS "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests_e3b0c442_tests.cmake")
+  include("/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests_e3b0c442_tests.cmake")
+else()
+  add_test(pastorage_tests_NOT_BUILT pastorage_tests_NOT_BUILT)
+endif()

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpastorage_core.a CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.o
+/usr/bin/ranlib libpastorage_core.a
