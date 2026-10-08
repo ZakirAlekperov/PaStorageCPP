@@ -1,0 +1,192 @@
+\doxysection{tests/\+\+Title\+Validator\+Test.cpp File Reference}
+\hypertarget{_title_validator_test_8cpp}{}\label{_title_validator_test_8cpp}\index{tests/TitleValidatorTest.cpp@{tests/TitleValidatorTest.cpp}}
+
+
+Модульные тесты валидатора названий сервисов.  
+
+
+{\ttfamily \+\#include $<$gtest/\+gtest.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include "{}core/\+\+Title\+Validator.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_title_validator_test_8cpp_a229e70f17700fa014ac49e807092b608}{TEST}} (Title\+Validator\+Test, Accepts\+Valid\+Title)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость обычного названия. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_title_validator_test_8cpp_aeb20bcb9a64f7e714f74d3be012d9327}{TEST}} (Title\+Validator\+Test, Rejects\+Empty\+Title)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение пустой строки. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_title_validator_test_8cpp_a0a48c6afa472f7e85c30725124f0d7dd}{TEST}} (Title\+Validator\+Test, Rejects\+Whitespace\+Title)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение названия из пробелов. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_title_validator_test_8cpp_abc0285624e55437fff3041d925def7c2}{TEST}} (Title\+Validator\+Test, Accepts\+Surrounding\+Spaces)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость названия с внешними пробелами. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_title_validator_test_8cpp_a946fbfd55f71ee813b3df085049a4366}{TEST}} (Title\+Validator\+Test, Distinguishes\+Validation\+Errors)
+\begin{DoxyCompactList}\small\item\em Проверяет различные сообщения ошибок. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модульные тесты валидатора названий сервисов. 
+
+Проверяет, что \doxylink{class_title_validator}{Title\+Validator} принимает допустимые названия и отклоняет недопустимые значения.
+
+Тесты также проверяют различие сообщений об ошибках. 
+
+Definition in file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+
+\label{_title_validator_test_8cpp_doc-func-members}
+\Hypertarget{_title_validator_test_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_title_validator_test_8cpp_abc0285624e55437fff3041d925def7c2}\index{TitleValidatorTest.cpp@{TitleValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TitleValidatorTest.cpp@{TitleValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{_title_validator_test_8cpp_abc0285624e55437fff3041d925def7c2} 
+TEST (\begin{DoxyParamCaption}\item[{Title\+Validator\+Test}]{}{, }\item[{Accepts\+Surrounding\+Spaces}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет допустимость названия с внешними пробелами. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000014}{Test}}]Title\+Validator\+Test.\+Accepts\+Surrounding\+Spaces \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_title_validator_test_8cpp_source_l00056}{56}} of file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}\ \ GitHub\ \ "{}})}
+\DoxyCodeLine{00059\ \ \ \ \ );}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_title_validator_test_8cpp_a229e70f17700fa014ac49e807092b608}\index{TitleValidatorTest.cpp@{TitleValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TitleValidatorTest.cpp@{TitleValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{_title_validator_test_8cpp_a229e70f17700fa014ac49e807092b608} 
+TEST (\begin{DoxyParamCaption}\item[{Title\+Validator\+Test}]{}{, }\item[{Accepts\+Valid\+Title}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет допустимость обычного названия. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000011}{Test}}]Title\+Validator\+Test.\+Accepts\+Valid\+Title \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_title_validator_test_8cpp_source_l00024}{24}} of file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}GitHub"{}})}
+\DoxyCodeLine{00027\ \ \ \ \ );}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_title_validator_test_8cpp_a946fbfd55f71ee813b3df085049a4366}\index{TitleValidatorTest.cpp@{TitleValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TitleValidatorTest.cpp@{TitleValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{_title_validator_test_8cpp_a946fbfd55f71ee813b3df085049a4366} 
+TEST (\begin{DoxyParamCaption}\item[{Title\+Validator\+Test}]{}{, }\item[{Distinguishes\+Validation\+Errors}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет различные сообщения ошибок. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000015}{Test}}]Title\+Validator\+Test.\+Distinguishes\+Validation\+Errors \end{DoxyRefDesc}
+
+
+Пустая строка и строка из пробелов должны приводить к исключениям с различным текстом. 
+
+Definition at line \doxymbox{\hyperlink{_title_validator_test_8cpp_source_l00070}{70}} of file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ std::string\ emptyError;}
+\DoxyCodeLine{00072\ \ \ \ \ std::string\ whitespaceError;}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ std::invalid\_argument\&\ error)\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ emptyError\ =\ error.what();}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ std::invalid\_argument\&\ error)\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ whitespaceError\ =\ error.what();}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ emptyError,}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
+\DoxyCodeLine{00091\ \ \ \ \ );}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ whitespaceError,}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{00096\ \ \ \ \ );}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_title_validator_test_8cpp_aeb20bcb9a64f7e714f74d3be012d9327}\index{TitleValidatorTest.cpp@{TitleValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TitleValidatorTest.cpp@{TitleValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{_title_validator_test_8cpp_aeb20bcb9a64f7e714f74d3be012d9327} 
+TEST (\begin{DoxyParamCaption}\item[{Title\+Validator\+Test}]{}{, }\item[{Rejects\+Empty\+Title}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение пустой строки. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000012}{Test}}]Title\+Validator\+Test.\+Rejects\+Empty\+Title \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_title_validator_test_8cpp_source_l00034}{34}} of file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}"{}}),}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00038\ \ \ \ \ );}
+\DoxyCodeLine{00039\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_title_validator_test_8cpp_a0a48c6afa472f7e85c30725124f0d7dd}\index{TitleValidatorTest.cpp@{TitleValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!TitleValidatorTest.cpp@{TitleValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{_title_validator_test_8cpp_a0a48c6afa472f7e85c30725124f0d7dd} 
+TEST (\begin{DoxyParamCaption}\item[{Title\+Validator\+Test}]{}{, }\item[{Rejects\+Whitespace\+Title}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение названия из пробелов. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000013}{Test}}]Title\+Validator\+Test.\+Rejects\+Whitespace\+Title \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_title_validator_test_8cpp_source_l00045}{45}} of file \doxymbox{\hyperlink{_title_validator_test_8cpp_source}{Title\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\ "{}}),}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00049\ \ \ \ \ );}
+\DoxyCodeLine{00050\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,91 @@
+\doxysection{Title\+Validator Class Reference}
+\hypertarget{class_title_validator}{}\label{class_title_validator}\index{TitleValidator@{TitleValidator}}
+
+
+Проверяет корректность названия сервиса.  
+
+
+
+
+{\ttfamily \+\#include $<$Title\+Validator.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{validate}} (std::\+string\+\_\+view title)
+\begin{DoxyCompactList}\small\item\em Проверяет название сервиса. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Проверяет корректность названия сервиса. 
+
+Предоставляет статический метод проверки строки.
+
+Класс не хранит состояние и не создаёт объекты для выполнения валидации. 
+
+Definition at line \doxymbox{\hyperlink{_title_validator_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{_title_validator_8h_source}{Title\+Validator.\+h}}.
+
+
+
+\label{class_title_validator_doc-func-members}
+\Hypertarget{class_title_validator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_title_validator_ab7190dc031a49babd927017167388c4f}\index{TitleValidator@{TitleValidator}!validate@{validate}}
+\index{validate@{validate}!TitleValidator@{TitleValidator}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_title_validator_ab7190dc031a49babd927017167388c4f} 
+void Title\+Validator::\+validate (\begin{DoxyParamCaption}\item[{std::\+string\+\_\+view}]{title}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверяет название сервиса. 
+
+Допустимое название должно содержать хотя бы один символ, отличный от ASCII-\/пробельных.
+
+Метод не изменяет переданную строку.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Проверяемое название сервиса.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Если название пустое или состоит исключительно из ASCII-\/пробельных символов.\\
+\hline
+\end{DoxyExceptions}
+Сначала проверяет отсутствие символов. Затем проверяет наличие хотя бы одного символа, не входящего в набор ASCII whitespace.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & При нарушении правил валидации. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \doxymbox{\hyperlink{_title_validator_8cpp_source_l00029}{29}} of file \doxymbox{\hyperlink{_title_validator_8cpp_source}{Title\+Validator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.empty())\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\+core/\doxymbox{\hyperlink{_title_validator_8h}{Title\+Validator.\+h}}\item 
+src/\+core/\doxymbox{\hyperlink{_title_validator_8cpp}{Title\+Validator.\+cpp}}\end{DoxyCompactItemize}

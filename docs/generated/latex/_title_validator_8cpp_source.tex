@@ -1,0 +1,26 @@
+\doxysection{Title\+Validator.\+cpp}
+\hypertarget{_title_validator_8cpp_source}{}\label{_title_validator_8cpp_source}\index{src/core/TitleValidator.cpp@{src/core/TitleValidator.cpp}}
+\doxymbox{\hyperlink{_title_validator_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_title_validator_8h}{TitleValidator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00029}\doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{00029}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(std::string\_view\ title)\ \{}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_title_validator_8cpp_source_l00042}00042\ \}}
+
+\end{DoxyCode}
