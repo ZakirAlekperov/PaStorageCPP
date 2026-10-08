@@ -1,25 +1,30 @@
 {
-  "tests": 3,
+  "tests": 4,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PasswordEntryTest",
-      "tests": 3,
+      "tests": 4,
       "testsuite": [
         {
           "name": "StoresTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 27
+          "line": 28
         },
         {
           "name": "StoresUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 43
+          "line": 44
         },
         {
           "name": "UpdatesUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 59
+          "line": 60
+        },
+        {
+          "name": "RejectsEmptyTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 81
         }
       ]
     }

@@ -13,6 +13,7 @@
  */
 #include <gtest/gtest.h>
 #include "core/PasswordEntry.h"
+#include <stdexcept>
 
 /**
  * @test PasswordEntryTest.StoresTitle
@@ -62,4 +63,24 @@ TEST(PasswordEntryTest, UpdatesUsername) {
     entry.setUsername("new@example.com");
 
     EXPECT_EQ(entry.username(), "new@example.com");
+}
+
+
+/**
+ * @test PasswordEntryTest.RejectsEmptyTitle
+ * @brief Проверяет запрет пустого названия сервиса.
+ *
+ * @details
+ * При попытке создать запись с пустым названием
+ * конструктор должен выбросить исключение
+ * std::invalid_argument.
+ *
+ * Тест защищает инвариант: название сервиса
+ * не может быть пустым.
+ */
+TEST(PasswordEntryTest, RejectsEmptyTitle) {
+    EXPECT_THROW(
+        PasswordEntry entry{""},
+        std::invalid_argument
+    );
 }

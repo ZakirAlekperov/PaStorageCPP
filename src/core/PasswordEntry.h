@@ -43,6 +43,9 @@ public:
      * значением. Имя пользователя остаётся пустым.
      *
      * @param title Название сервиса.
+     *
+     * @throws std::invalid_argument
+     *         Если название сервиса пустое.
      */
     explicit PasswordEntry(std::string title);
 
@@ -55,6 +58,8 @@ public:
      *
      * @param title Название сервиса.
      * @param username Имя пользователя.
+     * @throws std::invalid_argument
+     *         Если название сервиса пустое.
      */
 
     PasswordEntry(std::string title, std::string username);

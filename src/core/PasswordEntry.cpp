@@ -16,6 +16,7 @@
 
 #include <string>
 #include <utility>
+#include <stdexcept>
 
 /**
  * @brief Создаёт запись без имени пользователя.
@@ -29,14 +30,21 @@ PasswordEntry::PasswordEntry(std::string title)
 }
 
 /**
- * @brief Инициализирует поля записи.
+ * @brief Создаёт запись с названием и именем пользователя.
  *
  * @details
- * Перемещает строковые значения из параметров
- * конструктора в поля объекта.
+ * Инициализирует внутренние поля переданными
+ * значениями с использованием семантики перемещения.
  *
- * Использование std::move позволяет применять
- * перемещающие конструкторы std::string.
+ * После инициализации проверяет название сервиса.
+ * Если оно пустое, создание объекта прерывается
+ * исключением std::invalid_argument.
+ *
+ * @param title Название сервиса.
+ * @param username Имя пользователя.
+ *
+ * @throws std::invalid_argument
+ *         Если название сервиса пустое.
  */
 PasswordEntry::PasswordEntry(
     std::string title,
@@ -44,6 +52,11 @@ PasswordEntry::PasswordEntry(
 )
     : title_{std::move(title)},
       username_{std::move(username)} {
+          if (title_.empty()) {
+              throw std::invalid_argument{
+                  "Название сервиса не может быть пустым."
+              };
+          }
 }
 
 /**
