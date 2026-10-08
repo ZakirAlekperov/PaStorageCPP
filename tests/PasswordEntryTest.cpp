@@ -84,3 +84,46 @@ TEST(PasswordEntryTest, RejectsEmptyTitle) {
         std::invalid_argument
     );
 }
+
+
+/**
+ * @test PasswordEntryTest.RejectsEmptyTitleWithoutUsername
+ * @brief Проверяет валидацию конструктора с одним аргументом.
+ *
+ * @details
+ * Убеждается, что конструктор без имени пользователя
+ * также запрещает пустое название сервиса.
+ *
+ * Это подтверждает, что делегирование конструктора
+ * сохраняет установленный инвариант класса.
+ */
+TEST(PasswordEntryTest, RejectsEmptyTitleWithoutUsername) {
+    EXPECT_THROW(
+        PasswordEntry entry{""},
+        std::invalid_argument
+    );
+}
+
+
+/**
+ * @test PasswordEntryTest.RejectsEmptyTitleWithUsername
+ * @brief Проверяет запрет пустого названия сервиса
+ *        при создании записи с именем пользователя.
+ *
+ * @details
+ * Создаёт объект PasswordEntry с двумя аргументами:
+ * пустым названием сервиса и непустым именем пользователя.
+ *
+ * Ожидается, что конструктор выбросит исключение
+ * std::invalid_argument, поскольку название сервиса
+ * не может быть пустым.
+ *
+ * Тест подтверждает соблюдение инварианта класса
+ * при использовании конструктора с двумя параметрами.
+ */
+TEST(PasswordEntryTest, RejectsEmptyTitleWithUsername) {
+    EXPECT_THROW(
+        (PasswordEntry{"", "user@example.com"}),
+        std::invalid_argument
+    );
+}

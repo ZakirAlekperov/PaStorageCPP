@@ -34,4 +34,22 @@ set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitle]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==])
+add_test([=[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:100]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PasswordEntryTest.RejectsEmptyTitleWithUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitleWithUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:124]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==])

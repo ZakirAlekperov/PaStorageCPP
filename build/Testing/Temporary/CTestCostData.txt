@@ -1,6 +1,8 @@
 pastorage_tests_NOT_BUILT 0 0
-PasswordEntryTest.StoresTitle 7 0.000818917
-PasswordEntryTest.StoresUsername 6 0.000725937
-PasswordEntryTest.UpdatesUsername 3 0.00131093
-PasswordEntryTest.RejectsEmptyTitle 1 0.00400413
+PasswordEntryTest.StoresTitle 9 0.000620528
+PasswordEntryTest.StoresUsername 8 0.000537625
+PasswordEntryTest.UpdatesUsername 5 0.000805775
+PasswordEntryTest.RejectsEmptyTitle 3 0.00123924
+PasswordEntryTest.RejectsEmptyTitleWithoutUsername 2 0.00180929
+PasswordEntryTest.RejectsEmptyTitleWithUsername 1 0.00363862
 ---

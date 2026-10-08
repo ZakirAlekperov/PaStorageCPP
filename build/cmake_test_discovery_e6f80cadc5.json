@@ -1,10 +1,10 @@
 {
-  "tests": 4,
+  "tests": 6,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PasswordEntryTest",
-      "tests": 4,
+      "tests": 6,
       "testsuite": [
         {
           "name": "StoresTitle",
@@ -25,6 +25,16 @@
           "name": "RejectsEmptyTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
           "line": 81
+        },
+        {
+          "name": "RejectsEmptyTitleWithoutUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 100
+        },
+        {
+          "name": "RejectsEmptyTitleWithUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 124
         }
       ]
     }
