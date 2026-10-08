@@ -14,6 +14,7 @@
 
 #include "PasswordEntry.h"
 
+#include <exception>
 #include <string>
 #include <utility>
 #include <stdexcept>
@@ -43,8 +44,12 @@ PasswordEntry::PasswordEntry(std::string title)
  * @param title Название сервиса.
  * @param username Имя пользователя.
  *
+ * @pre Название сервиса должно содержать хотя бы
+ *      один символ, отличный от ASCII-пробельных.
+ *
  * @throws std::invalid_argument
  *         Если название сервиса пустое.
+ *         Если название состоит из пробелов.
  */
 PasswordEntry::PasswordEntry(
     std::string title,
@@ -55,6 +60,12 @@ PasswordEntry::PasswordEntry(
           if (title_.empty()) {
               throw std::invalid_argument{
                   "Название сервиса не может быть пустым."
+              };
+          }
+
+          if (title_.find_first_not_of(" \t\n\r\f\v") == std::string::npos){
+              throw std::invalid_argument{
+                  "Название сервиса не может состоять из пробелов."
               };
           }
 }

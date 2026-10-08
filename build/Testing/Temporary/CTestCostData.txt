@@ -1,8 +1,12 @@
 pastorage_tests_NOT_BUILT 0 0
-PasswordEntryTest.StoresTitle 9 0.000620528
-PasswordEntryTest.StoresUsername 8 0.000537625
-PasswordEntryTest.UpdatesUsername 5 0.000805775
-PasswordEntryTest.RejectsEmptyTitle 3 0.00123924
-PasswordEntryTest.RejectsEmptyTitleWithoutUsername 2 0.00180929
-PasswordEntryTest.RejectsEmptyTitleWithUsername 1 0.00363862
+PasswordEntryTest.StoresTitle 12 0.000855889
+PasswordEntryTest.StoresUsername 11 0.000464538
+PasswordEntryTest.UpdatesUsername 8 0.000575396
+PasswordEntryTest.RejectsEmptyTitle 7 0.000702518
+PasswordEntryTest.RejectsEmptyTitleWithoutUsername 6 0.000719993
+PasswordEntryTest.RejectsEmptyTitleWithUsername 5 0.000804958
+PasswordEntryTest.RejectsWhitespaceOnlyTitle 3 0.00138318
+PasswordEntryTest.EmptyTitleHasSpecificError 2 0.00195867
+PasswordEntryTest.RejectsMixedWhitespaceTitle 1 0.00413175
+PasswordEntryTest.PreservesTitleWithSurroundingSpaces 1 0.00394867
 ---

@@ -1,1 +1,3 @@
-4:PasswordEntryTest.RejectsEmptyTitle
+1:PasswordEntryTest.StoresTitle
+2:PasswordEntryTest.StoresUsername
+3:PasswordEntryTest.UpdatesUsername

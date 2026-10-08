@@ -1,10 +1,10 @@
 {
-  "tests": 6,
+  "tests": 10,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PasswordEntryTest",
-      "tests": 6,
+      "tests": 10,
       "testsuite": [
         {
           "name": "StoresTitle",
@@ -35,6 +35,26 @@
           "name": "RejectsEmptyTitleWithUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
           "line": 124
+        },
+        {
+          "name": "RejectsWhitespaceOnlyTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 149
+        },
+        {
+          "name": "EmptyTitleHasSpecificError",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 165
+        },
+        {
+          "name": "RejectsMixedWhitespaceTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 189
+        },
+        {
+          "name": "PreservesTitleWithSurroundingSpaces",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 210
         }
       ]
     }

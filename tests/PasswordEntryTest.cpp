@@ -127,3 +127,88 @@ TEST(PasswordEntryTest, RejectsEmptyTitleWithUsername) {
         std::invalid_argument
     );
 }
+
+
+/**
+ * @test PasswordEntryTest.RejectsWhitespaceOnlyTitle
+ * @brief Проверяет запрет названия, состоящего из пробелов.
+ *
+ * @details
+ * Создаёт запись с названием, содержащим только
+ * пробелы ASCII.
+ *
+ * Ожидается исключение std::invalid_argument,
+ * поскольку такое название не содержит
+ * значимых символов.
+ *
+ * @note
+ * Этот тест проверяет обычные пробелы.
+ * Другие пробельные символы будут проверены
+ * отдельными тестами.
+ */
+TEST(PasswordEntryTest, RejectsWhitespaceOnlyTitle) {
+    EXPECT_THROW(
+        (PasswordEntry{"   ", "user@example.com"}),
+        std::invalid_argument
+    );
+}
+
+
+/**
+ * @test PasswordEntryTest.EmptyTitleHasSpecificError
+ * @brief Проверяет сообщение об ошибке для пустого названия.
+ *
+ * @details
+ * Убеждается, что исключение содержит именно сообщение
+ * о пустом названии, а не о пробельных символах.
+ */
+TEST(PasswordEntryTest, EmptyTitleHasSpecificError) {
+    try {
+        PasswordEntry entry{""};
+        FAIL() << "Ожидалось исключение std::invalid_argument";
+    }
+    catch (const std::invalid_argument& e) {
+        EXPECT_STREQ(
+            e.what(),
+            "Название сервиса не может быть пустым."
+        );
+    }
+}
+
+
+/**
+ * @test PasswordEntryTest.RejectsMixedWhitespaceTitle
+ * @brief Проверяет запрет названия из разных пробельных символов.
+ *
+ * @details
+ * Название содержит пробел, горизонтальную табуляцию
+ * и перевод строки, но не содержит значимых символов.
+ *
+ * Конструктор должен выбросить std::invalid_argument.
+ */
+TEST(PasswordEntryTest, RejectsMixedWhitespaceTitle) {
+    EXPECT_THROW(
+        (PasswordEntry{" \t\n ", "user@example.com"}),
+        std::invalid_argument
+    );
+}
+
+
+
+/**
+ * @test PasswordEntryTest.PreservesTitleWithSurroundingSpaces
+ * @brief Проверяет сохранение допустимого названия с пробелами.
+ *
+ * @details
+ * Название содержит значимые символы и пробелы
+ * в начале и конце строки.
+ *
+ * Конструктор должен успешно создать объект.
+ * Метод title() должен вернуть исходную строку
+ * без удаления или изменения пробелов.
+ */
+TEST(PasswordEntryTest, PreservesTitleWithSurroundingSpaces) {
+    PasswordEntry entry{"  GitHub  ", "user@example.com"};
+
+    EXPECT_EQ(entry.title(), "  GitHub  ");
+}
