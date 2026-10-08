@@ -19,6 +19,3 @@ cmake-build-*/
 *.db
 *.sqlite
 *.sqlite3
-
-# Автоматически сгенерированная документация Doxygen.
-docs/generated/
