@@ -1,5 +1,5 @@
 {
-  "tests": 15,
+  "tests": 18,
   "name": "AllTests",
   "testsuites": [
     {
@@ -60,7 +60,7 @@
     },
     {
       "name": "TitleValidatorTest",
-      "tests": 5,
+      "tests": 7,
       "testsuite": [
         {
           "name": "AcceptsValidTitle",
@@ -86,6 +86,27 @@
           "name": "DistinguishesValidationErrors",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
           "line": 70
+        },
+        {
+          "name": "EmptyTitleHasErrorCode",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/ValidationErrorTest.cpp",
+          "line": 47
+        },
+        {
+          "name": "WhitespaceTitleHasErrorCode",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/ValidationErrorTest.cpp",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "name": "ValidationErrorTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "StoresErrorCode",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/ValidationErrorTest.cpp",
+          "line": 26
         }
       ]
     }

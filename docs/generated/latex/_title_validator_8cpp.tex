@@ -2,19 +2,19 @@
 \hypertarget{_title_validator_8cpp}{}\label{_title_validator_8cpp}\index{src/core/TitleValidator.cpp@{src/core/TitleValidator.cpp}}
 
 
-Реализация проверки названий сервисов.  
+Реализация валидации названий сервисов.  
 
 
 {\ttfamily \+\#include "{}Title\+Validator.\+h"{}}\newline
-{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include "{}Validation\+Error.\+h"{}}\newline
 
 
 \doxysubsection{Detailed Description}
-Реализация проверки названий сервисов. 
+Реализация валидации названий сервисов. 
 
-Проверяет пустые строки и строки, состоящие исключительно из ASCII-\/пробельных символов.
+Выполняет проверку допустимости названия.
 
-Для различных ошибок предусмотрены отдельные диагностические сообщения. 
+При обнаружении ошибки выбрасывает типизированное исключение \doxylink{class_validation_error}{Validation\+Error}. 
 
 Definition in file \doxymbox{\hyperlink{_title_validator_8cpp_source}{Title\+Validator.\+cpp}}.
 

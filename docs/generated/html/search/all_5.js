@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['username_0',['username',['../class_password_entry.html#a29aec1b06757ceeed07acaac3c6b09ee',1,'PasswordEntry']]]
+  ['setusername_0',['setUsername',['../class_password_entry.html#ae2a41c22af6b05eb6aaebe3aec81a124',1,'PasswordEntry']]]
 ];

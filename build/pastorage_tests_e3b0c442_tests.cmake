@@ -133,4 +133,31 @@ set_tests_properties([=[TitleValidatorTest.DistinguishesValidationErrors]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==])
+add_test([=[TitleValidatorTest.EmptyTitleHasErrorCode]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=TitleValidatorTest.EmptyTitleHasErrorCode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TitleValidatorTest.EmptyTitleHasErrorCode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp:47]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[TitleValidatorTest.WhitespaceTitleHasErrorCode]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=TitleValidatorTest.WhitespaceTitleHasErrorCode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TitleValidatorTest.WhitespaceTitleHasErrorCode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp:68]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[ValidationErrorTest.StoresErrorCode]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=ValidationErrorTest.StoresErrorCode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ValidationErrorTest.StoresErrorCode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp:26]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==])

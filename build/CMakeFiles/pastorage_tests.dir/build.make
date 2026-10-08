@@ -100,22 +100,38 @@ CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zakiralekperov/Documents/PaStorage/tests/TitleValidatorTest.cpp -o CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s
 
+CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o: CMakeFiles/pastorage_tests.dir/flags.make
+CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o: /Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp
+CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o: CMakeFiles/pastorage_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o -MF CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o.d -o CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o -c /Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp
+
+CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp > CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.i
+
+CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp -o CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.s
+
 # Object files for target pastorage_tests
 pastorage_tests_OBJECTS = \
 "CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o" \
-"CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o"
+"CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o" \
+"CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o"
 
 # External object files for target pastorage_tests
 pastorage_tests_EXTERNAL_OBJECTS =
 
 pastorage_tests: CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o
 pastorage_tests: CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o
+pastorage_tests: CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o
 pastorage_tests: CMakeFiles/pastorage_tests.dir/build.make
 pastorage_tests: libpastorage_core.a
 pastorage_tests: lib/libgtest_main.a
 pastorage_tests: lib/libgtest.a
 pastorage_tests: CMakeFiles/pastorage_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable pastorage_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pastorage_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pastorage_tests.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/cmake -P /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests_e3b0c442_discovery.cmake -- 
 

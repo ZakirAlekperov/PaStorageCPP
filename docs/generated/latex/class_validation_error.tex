@@ -1,0 +1,109 @@
+\doxysection{Validation\+Error Class Reference}
+\hypertarget{class_validation_error}{}\label{class_validation_error}\index{ValidationError@{ValidationError}}
+
+
+Исключение, возникающее при ошибке валидации.  
+
+
+
+
+{\ttfamily \+\#include $<$Validation\+Error.\+h$>$}
+
+Inheritance diagram for Validation\+Error:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_validation_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_validation_error_ad8c074d8f46a9af76669f68ac4bab453}{Validation\+Error}} (\doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} code, const std::\+string \&message)
+\begin{DoxyCompactList}\small\item\em Создаёт исключение валидации. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} \doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Возвращает программный код ошибки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Исключение, возникающее при ошибке валидации. 
+
+Наследуется от std::\+invalid\+\_\+argument.
+
+Содержит программный код ошибки и текстовое описание, доступное через what(). 
+
+Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00043}{43}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
+
+
+
+\label{class_validation_error_doc-constructors}
+\Hypertarget{class_validation_error_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_validation_error_ad8c074d8f46a9af76669f68ac4bab453}\index{ValidationError@{ValidationError}!ValidationError@{ValidationError}}
+\index{ValidationError@{ValidationError}!ValidationError@{ValidationError}}
+\doxysubsubsection{\texorpdfstring{ValidationError()}{ValidationError()}}
+{\footnotesize\ttfamily \label{class_validation_error_ad8c074d8f46a9af76669f68ac4bab453} 
+Validation\+Error::\+\+Validation\+Error (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}}}]{code}{, }\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Создаёт исключение валидации. 
+
+Инициализирует исключение валидации.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & Программный код ошибки. \\
+\hline
+{\em message} & Диагностическое сообщение.\\
+\hline
+\end{DoxyParams}
+Передаёт текст ошибки конструктору std::\+invalid\+\_\+argument и сохраняет код ошибки. 
+
+Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00020}{20}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ :\ std::invalid\_argument\{message\},}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ code\_\{\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}\}\ \{}
+\DoxyCodeLine{00026\ \}}
+
+\end{DoxyCode}
+
+
+\label{class_validation_error_doc-func-members}
+\Hypertarget{class_validation_error_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}\index{ValidationError@{ValidationError}!code@{code}}
+\index{code@{code}!ValidationError@{ValidationError}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}}
+{\footnotesize\ttfamily \label{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203} 
+\doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} Validation\+Error::\+code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Возвращает программный код ошибки. 
+
+Возвращает код ошибки.
+
+\begin{DoxyReturn}{Returns}
+Код, переданный конструктору.
+
+Сохранённое значение \doxylink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00033}{33}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ code\_;}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\+core/\doxymbox{\hyperlink{_validation_error_8h}{Validation\+Error.\+h}}\item 
+src/\+core/\doxymbox{\hyperlink{_validation_error_8cpp}{Validation\+Error.\+cpp}}\end{DoxyCompactItemize}

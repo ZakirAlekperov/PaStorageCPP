@@ -114,16 +114,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_title_validat
 </div><!--header-->
 <div class="contents">
 
-<p>Реализация проверки названий сервисов.  
+<p>Реализация валидации названий сервисов.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_title_validator_8h_source.html">TitleValidator.h</a>&quot;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>&quot;</code><br />
 </div>
 <p><a href="_title_validator_8cpp_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Реализация проверки названий сервисов. </p>
-<p>Проверяет пустые строки и строки, состоящие исключительно из ASCII-пробельных символов.</p>
-<p>Для различных ошибок предусмотрены отдельные диагностические сообщения. </p>
+<div class="textblock"><p>Реализация валидации названий сервисов. </p>
+<p>Выполняет проверку допустимости названия.</p>
+<p>При обнаружении ошибки выбрасывает типизированное исключение <a class="el" href="class_validation_error.html" title="Исключение, возникающее при ошибке валидации.">ValidationError</a>. </p>
 
 <p class="definition">Definition in file <a class="el" href="_title_validator_8cpp_source.html">TitleValidator.cpp</a>.</p>
 </div></div><!-- contents -->

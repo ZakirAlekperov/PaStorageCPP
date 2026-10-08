@@ -1,0 +1,73 @@
+\doxysection{src/\+core/\+\+Validation\+Error.h File Reference}
+\hypertarget{_validation_error_8h}{}\label{_validation_error_8h}\index{src/core/ValidationError.h@{src/core/ValidationError.h}}
+
+
+Объявление типизированных ошибок валидации.  
+
+
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_validation_error}{Validation\+Error}}
+\begin{DoxyCompactList}\small\item\em Исключение, возникающее при ошибке валидации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} \{ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{Empty\+Title}}
+, \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{Whitespace\+Title}}
+ \}
+\begin{DoxyCompactList}\small\item\em Коды ошибок проверки входных данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Объявление типизированных ошибок валидации. 
+
+Предоставляет перечисление кодов ошибок и собственный класс исключения Pa\+Storage.
+
+Позволяет различать ошибки без анализа диагностического текста. 
+
+Definition in file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
+
+
+
+\label{_validation_error_8h_doc-enum-members}
+\Hypertarget{_validation_error_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}\index{ValidationError.h@{ValidationError.h}!ValidationErrorCode@{ValidationErrorCode}}
+\index{ValidationErrorCode@{ValidationErrorCode}!ValidationError.h@{ValidationError.h}}
+\doxysubsubsection{\texorpdfstring{ValidationErrorCode}{ValidationErrorCode}}
+{\footnotesize\ttfamily \label{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86} 
+enum class \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Коды ошибок проверки входных данных. 
+
+Каждый элемент перечисления обозначает определённую причину отказа валидации. \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EmptyTitle@{EmptyTitle}!ValidationError.h@{ValidationError.h}}
+\index{ValidationError.h@{ValidationError.h}!EmptyTitle@{EmptyTitle}}
+}\Hypertarget{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}\label{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97} 
+Empty\+Title&Название сервиса пустое. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WhitespaceTitle@{WhitespaceTitle}!ValidationError.h@{ValidationError.h}}
+\index{ValidationError.h@{ValidationError.h}!WhitespaceTitle@{WhitespaceTitle}}
+}\Hypertarget{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}\label{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339} 
+Whitespace\+Title&Название состоит из пробелов. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00028}{28}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{EmptyTitle}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{WhitespaceTitle}}\ \ \ }
+\DoxyCodeLine{00031\ \};}
+
+\end{DoxyCode}

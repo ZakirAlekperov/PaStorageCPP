@@ -1,41 +1,44 @@
 
 /**
  * @file TitleValidator.cpp
- * @brief Реализация проверки названий сервисов.
+ * @brief Реализация валидации названий сервисов.
  *
  * @details
- * Проверяет пустые строки и строки, состоящие
- * исключительно из ASCII-пробельных символов.
+ * Выполняет проверку допустимости названия.
  *
- * Для различных ошибок предусмотрены
- * отдельные диагностические сообщения.
+ * При обнаружении ошибки выбрасывает
+ * типизированное исключение ValidationError.
  */
 
 #include "TitleValidator.h"
-
-#include <stdexcept>
+#include "ValidationError.h"
 
 /**
- * @brief Проверяет название сервиса.
+ * @brief Проверяет корректность названия сервиса.
  *
  * @details
- * Сначала проверяет отсутствие символов.
- * Затем проверяет наличие хотя бы одного символа,
- * не входящего в набор ASCII whitespace.
+ * Сначала проверяет полностью пустую строку.
+ * Затем проверяет строку на наличие символов,
+ * отличных от ASCII-пробельных.
  *
- * @throws std::invalid_argument
- *         При нарушении правил валидации.
+ * @throws ValidationError
+ *         Если название пустое или состоит
+ *         исключительно из ASCII-пробельных символов.
+ *
+ * @see ValidationErrorCode
  */
 void TitleValidator::validate(std::string_view title) {
     if (title.empty()) {
-        throw std::invalid_argument{
+        throw ValidationError{
+            ValidationErrorCode::EmptyTitle,
             "Название сервиса не может быть пустым."
         };
     }
 
     if (title.find_first_not_of(" \t\n\r\f\v")
         == std::string_view::npos) {
-        throw std::invalid_argument{
+        throw ValidationError{
+            ValidationErrorCode::WhitespaceTitle,
             "Название сервиса не может состоять из пробелов."
         };
     }

@@ -40,6 +40,8 @@ void Title\+Validator::\+validate (\begin{DoxyParamCaption}\item[{std::\+string\
 
 Проверяет название сервиса. 
 
+Проверяет корректность названия сервиса.
+
 Допустимое название должно содержать хотя бы один символ, отличный от ASCII-\/пробельных.
 
 Метод не изменяет переданную строку.
@@ -54,33 +56,38 @@ void Title\+Validator::\+validate (\begin{DoxyParamCaption}\item[{std::\+string\
 {\em std::\+invalid\+\_\+argument} & Если название пустое или состоит исключительно из ASCII-\/пробельных символов.\\
 \hline
 \end{DoxyExceptions}
-Сначала проверяет отсутствие символов. Затем проверяет наличие хотя бы одного символа, не входящего в набор ASCII whitespace.
+Сначала проверяет полностью пустую строку. Затем проверяет строку на наличие символов, отличных от ASCII-\/пробельных.
 
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std::\+invalid\+\_\+argument} & При нарушении правил валидации. \\
+{\em \doxylink{class_validation_error}{Validation\+Error}} & Если название пустое или состоит исключительно из ASCII-\/пробельных символов.\\
 \hline
 \end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code} 
+\end{DoxySeeAlso}
 
 
-Definition at line \doxymbox{\hyperlink{_title_validator_8cpp_source_l00029}{29}} of file \doxymbox{\hyperlink{_title_validator_8cpp_source}{Title\+Validator.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_title_validator_8cpp_source_l00030}{30}} of file \doxymbox{\hyperlink{_title_validator_8cpp_source}{Title\+Validator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.empty())\ \{}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00034\ \ \ \ \ \}}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ состоять\ из\ пробелов."{}}}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00041\ \ \ \ \ \}}
-\DoxyCodeLine{00042\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.empty())\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ ValidationError\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{ValidationErrorCode::EmptyTitle}},}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (title.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ ValidationError\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{ValidationErrorCode::WhitespaceTitle}},}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \}}
 
 \end{DoxyCode}
 

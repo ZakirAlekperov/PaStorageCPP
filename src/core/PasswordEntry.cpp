@@ -46,8 +46,11 @@ PasswordEntry::PasswordEntry(std::string title)
  * @param title Название сервиса.
  * @param username Имя пользователя.
  *
- * @throws std::invalid_argument
- *         Если название сервиса некорректно.
+ * @throws ValidationError
+ *         Если название пустое или состоит
+ *         исключительно из ASCII-пробельных символов.
+ *
+ * @see ValidationErrorCode
  */
 PasswordEntry::PasswordEntry(
     std::string title,

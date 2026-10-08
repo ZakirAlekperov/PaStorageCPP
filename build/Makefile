@@ -310,6 +310,30 @@ src/core/TitleValidator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.s
 .PHONY : src/core/TitleValidator.cpp.s
 
+src/core/ValidationError.o: src/core/ValidationError.cpp.o
+.PHONY : src/core/ValidationError.o
+
+# target to build an object file
+src/core/ValidationError.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o
+.PHONY : src/core/ValidationError.cpp.o
+
+src/core/ValidationError.i: src/core/ValidationError.cpp.i
+.PHONY : src/core/ValidationError.i
+
+# target to preprocess a source file
+src/core/ValidationError.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.i
+.PHONY : src/core/ValidationError.cpp.i
+
+src/core/ValidationError.s: src/core/ValidationError.cpp.s
+.PHONY : src/core/ValidationError.s
+
+# target to generate assembly for a file
+src/core/ValidationError.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.s
+.PHONY : src/core/ValidationError.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -382,6 +406,30 @@ tests/TitleValidatorTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s
 .PHONY : tests/TitleValidatorTest.cpp.s
 
+tests/ValidationErrorTest.o: tests/ValidationErrorTest.cpp.o
+.PHONY : tests/ValidationErrorTest.o
+
+# target to build an object file
+tests/ValidationErrorTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o
+.PHONY : tests/ValidationErrorTest.cpp.o
+
+tests/ValidationErrorTest.i: tests/ValidationErrorTest.cpp.i
+.PHONY : tests/ValidationErrorTest.i
+
+# target to preprocess a source file
+tests/ValidationErrorTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.i
+.PHONY : tests/ValidationErrorTest.cpp.i
+
+tests/ValidationErrorTest.s: tests/ValidationErrorTest.cpp.s
+.PHONY : tests/ValidationErrorTest.s
+
+# target to generate assembly for a file
+tests/ValidationErrorTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.s
+.PHONY : tests/ValidationErrorTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -408,6 +456,9 @@ help:
 	@echo "... src/core/TitleValidator.o"
 	@echo "... src/core/TitleValidator.i"
 	@echo "... src/core/TitleValidator.s"
+	@echo "... src/core/ValidationError.o"
+	@echo "... src/core/ValidationError.i"
+	@echo "... src/core/ValidationError.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -417,6 +468,9 @@ help:
 	@echo "... tests/TitleValidatorTest.o"
 	@echo "... tests/TitleValidatorTest.i"
 	@echo "... tests/TitleValidatorTest.s"
+	@echo "... tests/ValidationErrorTest.o"
+	@echo "... tests/ValidationErrorTest.i"
+	@echo "... tests/ValidationErrorTest.s"
 .PHONY : help
 
 

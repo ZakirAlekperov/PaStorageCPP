@@ -1,2 +1,2 @@
-/usr/bin/ar qc libpastorage_core.a CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.o CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o
+/usr/bin/ar qc libpastorage_core.a CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.o CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o
 /usr/bin/ranlib libpastorage_core.a

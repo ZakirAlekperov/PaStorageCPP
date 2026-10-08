@@ -1,0 +1,51 @@
+\doxysection{Validation\+Error\+Test.\+cpp}
+\hypertarget{_validation_error_test_8cpp_source}{}\label{_validation_error_test_8cpp_source}\index{tests/ValidationErrorTest.cpp@{tests/ValidationErrorTest.cpp}}
+\doxymbox{\hyperlink{_validation_error_test_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_validation_error_8h}{core/ValidationError.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_title_validator_8h}{core/TitleValidator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00026}\doxymbox{\hyperlink{_validation_error_test_8cpp_a36f91cf067ed11828ec318578114f1ca}{00026}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(ValidationErrorTest,\ StoresErrorCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00027}00027\ \ \ \ \ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\ error\{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{ValidationErrorCode::EmptyTitle}},}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Название\ сервиса\ не\ может\ быть\ пустым."{}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00030}00030\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00032}00032\ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ error.\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}(),}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{ValidationErrorCode::EmptyTitle}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00035}00035\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00047}\doxymbox{\hyperlink{_validation_error_test_8cpp_af1538bb72723c2694d7f3f0706b7551d}{00047}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(TitleValidatorTest,\ EmptyTitleHasErrorCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ FAIL()\ <<\ \textcolor{stringliteral}{"{}Ожидалось\ исключение\ ValidationError"{}};}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00051}00051\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\&\ error)\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ error.\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}(),}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{ValidationErrorCode::EmptyTitle}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00058}00058\ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00068}\doxymbox{\hyperlink{_validation_error_test_8cpp_aa2a87c6ca1c63f442dc169d5cdd9415a}{00068}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(TitleValidatorTest,\ WhitespaceTitleHasErrorCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_title_validator_ab7190dc031a49babd927017167388c4f}{TitleValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ FAIL()\ <<\ \textcolor{stringliteral}{"{}Ожидалось\ исключение\ ValidationError"{}};}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\&\ error)\ \{}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ error.\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}(),}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{ValidationErrorCode::WhitespaceTitle}}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_validation_error_test_8cpp_source_l00079}00079\ \}}
+
+\end{DoxyCode}

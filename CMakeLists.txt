@@ -65,6 +65,7 @@ FetchContent_MakeAvailable(googletest)
 add_library(pastorage_core
     src/core/PasswordEntry.cpp
     src/core/TitleValidator.cpp
+    src/core/ValidationError.cpp
 )
 
 # Публичный путь к заголовочным файлам ядра.
@@ -93,6 +94,7 @@ enable_testing()
 add_executable(pastorage_tests
     tests/PasswordEntryTest.cpp
     tests/TitleValidatorTest.cpp
+    tests/ValidationErrorTest.cpp
 )
 
 

@@ -114,29 +114,34 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_title_validat
 </div><!--header-->
 <div class="contents">
 <a href="_title_validator_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_title_validator_8h.html">TitleValidator.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">TitleValidator::validate</a>(std::string_view title) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span> (title.empty()) {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">throw</span> std::invalid_argument{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="stringliteral">&quot;Название сервиса не может быть пустым.&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        };</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (title.find_first_not_of(<span class="stringliteral">&quot; \t\n\r\f\v&quot;</span>)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        == std::string_view::npos) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">throw</span> std::invalid_argument{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="stringliteral">&quot;Название сервиса не может состоять из пробелов.&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        };</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_title_validator_8h.html">TitleValidator.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_validation_error_8h.html">ValidationError.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">TitleValidator::validate</a>(std::string_view title) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (title.empty()) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_validation_error.html">ValidationError</a>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_enumvalue" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">ValidationErrorCode::EmptyTitle</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="stringliteral">&quot;Название сервиса не может быть пустым.&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (title.find_first_not_of(<span class="stringliteral">&quot; \t\n\r\f\v&quot;</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        == std::string_view::npos) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_validation_error.html">ValidationError</a>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_enumvalue" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">ValidationErrorCode::WhitespaceTitle</a>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="stringliteral">&quot;Название сервиса не может состоять из пробелов.&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="ttc" id="a_title_validator_8h_html"><div class="ttname"><a href="_title_validator_8h.html">TitleValidator.h</a></div><div class="ttdoc">Объявление валидатора названий сервисов.</div></div>
-<div class="ttc" id="aclass_title_validator_html_ab7190dc031a49babd927017167388c4f"><div class="ttname"><a href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">TitleValidator::validate</a></div><div class="ttdeci">static void validate(std::string_view title)</div><div class="ttdoc">Проверяет название сервиса.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">TitleValidator.cpp:29</a></div></div>
+<div class="ttc" id="a_validation_error_8h_html"><div class="ttname"><a href="_validation_error_8h.html">ValidationError.h</a></div><div class="ttdoc">Объявление типизированных ошибок валидации.</div></div>
+<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97"><div class="ttname"><a href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">ValidationErrorCode::EmptyTitle</a></div><div class="ttdeci">@ EmptyTitle</div><div class="ttdoc">Название сервиса пустое.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00029">ValidationError.h:29</a></div></div>
+<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339"><div class="ttname"><a href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">ValidationErrorCode::WhitespaceTitle</a></div><div class="ttdeci">@ WhitespaceTitle</div><div class="ttdoc">Название состоит из пробелов.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00030">ValidationError.h:30</a></div></div>
+<div class="ttc" id="aclass_title_validator_html_ab7190dc031a49babd927017167388c4f"><div class="ttname"><a href="class_title_validator.html#ab7190dc031a49babd927017167388c4f">TitleValidator::validate</a></div><div class="ttdeci">static void validate(std::string_view title)</div><div class="ttdoc">Проверяет название сервиса.</div><div class="ttdef"><b>Definition</b> <a href="#l00030">TitleValidator.cpp:30</a></div></div>
+<div class="ttc" id="aclass_validation_error_html"><div class="ttname"><a href="class_validation_error.html">ValidationError</a></div><div class="ttdoc">Исключение, возникающее при ошибке валидации.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00043">ValidationError.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

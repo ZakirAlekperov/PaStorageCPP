@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp" "CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o" "gcc" "CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o.d"
   "/Users/zakiralekperov/Documents/PaStorage/tests/TitleValidatorTest.cpp" "CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o" "gcc" "CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o.d"
+  "/Users/zakiralekperov/Documents/PaStorage/tests/ValidationErrorTest.cpp" "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o" "gcc" "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
