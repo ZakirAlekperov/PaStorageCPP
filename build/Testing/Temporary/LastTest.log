@@ -1,10 +1,10 @@
-Start testing: Oct 08 13:24 MSK
+Start testing: Oct 08 13:37 MSK
 ----------------------------------------------------------
-1/2 Testing: PasswordEntryTest.StoresTitle
-1/2 Test: PasswordEntryTest.StoresTitle
+1/3 Testing: PasswordEntryTest.StoresTitle
+1/3 Test: PasswordEntryTest.StoresTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresTitle" start time: Oct 08 13:24 MSK
+"PasswordEntryTest.StoresTitle" start time: Oct 08 13:37 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,15 +23,15 @@ Note: Google Test filter = PasswordEntryTest.StoresTitle
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresTitle" end time: Oct 08 13:24 MSK
+"PasswordEntryTest.StoresTitle" end time: Oct 08 13:37 MSK
 "PasswordEntryTest.StoresTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: PasswordEntryTest.StoresUsername
-2/2 Test: PasswordEntryTest.StoresUsername
+2/3 Testing: PasswordEntryTest.StoresUsername
+2/3 Test: PasswordEntryTest.StoresUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresUsername" start time: Oct 08 13:24 MSK
+"PasswordEntryTest.StoresUsername" start time: Oct 08 13:37 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -47,11 +47,38 @@ Note: Google Test filter = PasswordEntryTest.StoresUsername
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresUsername" end time: Oct 08 13:24 MSK
+"PasswordEntryTest.StoresUsername" end time: Oct 08 13:37 MSK
 "PasswordEntryTest.StoresUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 08 13:24 MSK
+3/3 Testing: PasswordEntryTest.UpdatesUsername
+3/3 Test: PasswordEntryTest.UpdatesUsername
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.UpdatesUsername" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"PasswordEntryTest.UpdatesUsername" start time: Oct 08 13:37 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PasswordEntryTest.UpdatesUsername
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PasswordEntryTest
+[ RUN      ] PasswordEntryTest.UpdatesUsername
+[       OK ] PasswordEntryTest.UpdatesUsername (0 ms)
+[----------] 1 test from PasswordEntryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PasswordEntryTest.UpdatesUsername" end time: Oct 08 13:37 MSK
+"PasswordEntryTest.UpdatesUsername" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 13:37 MSK

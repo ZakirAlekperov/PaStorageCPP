@@ -1,20 +1,25 @@
 {
-  "tests": 2,
+  "tests": 3,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PasswordEntryTest",
-      "tests": 2,
+      "tests": 3,
       "testsuite": [
         {
           "name": "StoresTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 5
+          "line": 27
         },
         {
           "name": "StoresUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 11
+          "line": 43
+        },
+        {
+          "name": "UpdatesUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 59
         }
       ]
     }
