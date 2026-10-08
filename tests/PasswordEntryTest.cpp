@@ -7,3 +7,9 @@ TEST(PasswordEntryTest, StoresTitle) {
 
     EXPECT_EQ(entry.title(), "GitHub");
 }
+
+TEST(PasswordEntryTest, StoresUsername) {
+    PasswordEntry entry{"GitHub", "test@example.com"};
+
+    EXPECT_EQ(entry.username(), "test@example.com");
+}
