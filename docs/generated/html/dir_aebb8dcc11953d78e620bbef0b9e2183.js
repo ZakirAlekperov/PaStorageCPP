@@ -7,5 +7,7 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "UsernameValidator.cpp", "_username_validator_8cpp.html", null ],
     [ "UsernameValidator.h", "_username_validator_8h.html", "_username_validator_8h" ],
     [ "ValidationError.cpp", "_validation_error_8cpp.html", null ],
-    [ "ValidationError.h", "_validation_error_8h.html", "_validation_error_8h" ]
+    [ "ValidationError.h", "_validation_error_8h.html", "_validation_error_8h" ],
+    [ "VaultHeader.cpp", "_vault_header_8cpp.html", null ],
+    [ "VaultHeader.h", "_vault_header_8h.html", "_vault_header_8h" ]
 ];

@@ -74,6 +74,7 @@ add_library(pastorage_core
     src/core/TitleValidator.cpp
     src/core/ValidationError.cpp
     src/core/UsernameValidator.cpp
+    src/core/VaultHeader.cpp
 )
 
 
@@ -105,6 +106,7 @@ add_executable(pastorage_tests
     tests/TitleValidatorTest.cpp
     tests/ValidationErrorTest.cpp
     tests/UsernameValidatorTest.cpp
+    tests/VaultHeaderTest.cpp
 )
 
 

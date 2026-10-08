@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/zakiralekperov/Documents/PaStorage/src/core/TitleValidator.cpp" "CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o" "gcc" "CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o.d"
   "/Users/zakiralekperov/Documents/PaStorage/src/core/UsernameValidator.cpp" "CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.o" "gcc" "CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.o.d"
   "/Users/zakiralekperov/Documents/PaStorage/src/core/ValidationError.cpp" "CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o" "gcc" "CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o.d"
+  "/Users/zakiralekperov/Documents/PaStorage/src/core/VaultHeader.cpp" "CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.o" "gcc" "CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

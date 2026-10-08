@@ -1,0 +1,177 @@
+\doxysection{Vault\+Header Class Reference}
+\hypertarget{class_vault_header}{}\label{class_vault_header}\index{VaultHeader@{VaultHeader}}
+
+
+Представляет фиксированный заголовок файла .vault.  
+
+
+
+
+{\ttfamily \+\#include $<$Vault\+Header.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::\+array$<$ std::\+uint8\+\_\+t, \doxymbox{\hyperlink{class_vault_header_ada3dee33ce8f62c8fbaa838afd3d04e6}{SIZE}} $>$ \doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}} () const
+\begin{DoxyCompactList}\small\item\em Сериализует заголовок. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_vault_header}{Vault\+Header}} \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{deserialize}} (std::\+span$<$ const std::\+uint8\+\_\+t $>$ bytes)
+\begin{DoxyCompactList}\small\item\em Восстанавливает заголовок из байтов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr std::\+size\+\_\+t \doxymbox{\hyperlink{class_vault_header_ada3dee33ce8f62c8fbaa838afd3d04e6}{SIZE}} \{16\}
+\begin{DoxyCompactList}\small\item\em Размер заголовка в байтах. \end{DoxyCompactList}\item 
+static constexpr std::\+uint16\+\_\+t \doxymbox{\hyperlink{class_vault_header_aeae7443532e42ce28f1a3d8079af8c67}{VERSION}} \{1\}
+\begin{DoxyCompactList}\small\item\em Поддерживаемая версия формата. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет фиксированный заголовок файла .vault. 
+
+Предоставляет сериализацию и десериализацию заголовка первой версии формата Pa\+Storage.
+
+Бинарный размер фиксирован и составляет 16 байт. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_8h_source_l00033}{33}} of file \doxymbox{\hyperlink{_vault_header_8h_source}{Vault\+Header.\+h}}.
+
+
+
+\label{class_vault_header_doc-func-members}
+\Hypertarget{class_vault_header_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vault_header_a202a66adb796e910fe082e91f55f2d39}\index{VaultHeader@{VaultHeader}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!VaultHeader@{VaultHeader}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily \label{class_vault_header_a202a66adb796e910fe082e91f55f2d39} 
+\doxymbox{\hyperlink{class_vault_header}{Vault\+Header}} Vault\+Header::\+deserialize (\begin{DoxyParamCaption}\item[{std::\+span$<$ const std::\+uint8\+\_\+t $>$}]{bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Восстанавливает заголовок из байтов. 
+
+Проверяет и восстанавливает заголовок.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & Последовательность байтов заголовка.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Проверенный объект \doxylink{class_vault_header}{Vault\+Header}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Если размер, сигнатура, версия, флаги или значение размера некорректны.\\
+\hline
+\end{DoxyExceptions}
+Сравнивает входную последовательность с фиксированным представлением первой версии.
+
+Такое сравнение проверяет одновременно размер, сигнатуру, версию, флаги и размер заголовка.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+invalid\+\_\+argument} & Если последовательность не соответствует поддерживаемому формату. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \doxymbox{\hyperlink{_vault_header_8cpp_source_l00050}{50}} of file \doxymbox{\hyperlink{_vault_header_8cpp_source}{Vault\+Header.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052\ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ VaultHeader\ header;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ expected\ =\ header.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{if}\ (bytes.size()\ !=\ expected.size())\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Некорректный\ размер\ заголовка\ хранилища."{}}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ i\{0\};\ i\ <\ expected.size();\ ++i)\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bytes[i]\ !=\ expected[i])\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument\{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Некорректный\ или\ неподдерживаемый\ заголовок."{}}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ header;}
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}\index{VaultHeader@{VaultHeader}!serialize@{serialize}}
+\index{serialize@{serialize}!VaultHeader@{VaultHeader}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{class_vault_header_a243ab3d35028f659c53fcc373b7c2450} 
+std::\+array$<$ std::\+uint8\+\_\+t, \doxymbox{\hyperlink{class_vault_header_ada3dee33ce8f62c8fbaa838afd3d04e6}{Vault\+Header::\+\+SIZE}} $>$ Vault\+Header::\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Сериализует заголовок. 
+
+Преобразует заголовок в бинарное представление.
+
+\begin{DoxyReturn}{Returns}
+Массив из 16 байт в формате Pa\+Storage.
+\end{DoxyReturn}
+Возвращает сигнатуру, версию, нулевые флаги и размер фиксированного заголовка. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_8cpp_source_l00027}{27}} of file \doxymbox{\hyperlink{_vault_header_8cpp_source}{Vault\+Header.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ 1,\ 0,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ 0,\ 0,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ 16,\ 0,\ 0,\ 0}
+\DoxyCodeLine{00033\ \ \ \ \ \};}
+\DoxyCodeLine{00034\ \}}
+
+\end{DoxyCode}
+
+
+\label{class_vault_header_doc-variable-members}
+\Hypertarget{class_vault_header_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_vault_header_ada3dee33ce8f62c8fbaa838afd3d04e6}\index{VaultHeader@{VaultHeader}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!VaultHeader@{VaultHeader}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily \label{class_vault_header_ada3dee33ce8f62c8fbaa838afd3d04e6} 
+std::\+size\+\_\+t Vault\+Header::\+\+SIZE \{16\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Размер заголовка в байтах. 
+
+
+
+Definition at line \doxymbox{\hyperlink{_vault_header_8h_source_l00036}{36}} of file \doxymbox{\hyperlink{_vault_header_8h_source}{Vault\+Header.\+h}}.
+
+\Hypertarget{class_vault_header_aeae7443532e42ce28f1a3d8079af8c67}\index{VaultHeader@{VaultHeader}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!VaultHeader@{VaultHeader}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily \label{class_vault_header_aeae7443532e42ce28f1a3d8079af8c67} 
+std::\+uint16\+\_\+t Vault\+Header::\+\+VERSION \{1\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Поддерживаемая версия формата. 
+
+
+
+Definition at line \doxymbox{\hyperlink{_vault_header_8h_source_l00039}{39}} of file \doxymbox{\hyperlink{_vault_header_8h_source}{Vault\+Header.\+h}}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\+core/\doxymbox{\hyperlink{_vault_header_8h}{Vault\+Header.\+h}}\item 
+src/\+core/\doxymbox{\hyperlink{_vault_header_8cpp}{Vault\+Header.\+cpp}}\end{DoxyCompactItemize}

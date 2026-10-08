@@ -358,6 +358,30 @@ src/core/ValidationError.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.s
 .PHONY : src/core/ValidationError.cpp.s
 
+src/core/VaultHeader.o: src/core/VaultHeader.cpp.o
+.PHONY : src/core/VaultHeader.o
+
+# target to build an object file
+src/core/VaultHeader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.o
+.PHONY : src/core/VaultHeader.cpp.o
+
+src/core/VaultHeader.i: src/core/VaultHeader.cpp.i
+.PHONY : src/core/VaultHeader.i
+
+# target to preprocess a source file
+src/core/VaultHeader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.i
+.PHONY : src/core/VaultHeader.cpp.i
+
+src/core/VaultHeader.s: src/core/VaultHeader.cpp.s
+.PHONY : src/core/VaultHeader.s
+
+# target to generate assembly for a file
+src/core/VaultHeader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.s
+.PHONY : src/core/VaultHeader.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -478,6 +502,30 @@ tests/ValidationErrorTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.s
 .PHONY : tests/ValidationErrorTest.cpp.s
 
+tests/VaultHeaderTest.o: tests/VaultHeaderTest.cpp.o
+.PHONY : tests/VaultHeaderTest.o
+
+# target to build an object file
+tests/VaultHeaderTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/VaultHeaderTest.cpp.o
+.PHONY : tests/VaultHeaderTest.cpp.o
+
+tests/VaultHeaderTest.i: tests/VaultHeaderTest.cpp.i
+.PHONY : tests/VaultHeaderTest.i
+
+# target to preprocess a source file
+tests/VaultHeaderTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/VaultHeaderTest.cpp.i
+.PHONY : tests/VaultHeaderTest.cpp.i
+
+tests/VaultHeaderTest.s: tests/VaultHeaderTest.cpp.s
+.PHONY : tests/VaultHeaderTest.s
+
+# target to generate assembly for a file
+tests/VaultHeaderTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/VaultHeaderTest.cpp.s
+.PHONY : tests/VaultHeaderTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -510,6 +558,9 @@ help:
 	@echo "... src/core/ValidationError.o"
 	@echo "... src/core/ValidationError.i"
 	@echo "... src/core/ValidationError.s"
+	@echo "... src/core/VaultHeader.o"
+	@echo "... src/core/VaultHeader.i"
+	@echo "... src/core/VaultHeader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -525,6 +576,9 @@ help:
 	@echo "... tests/ValidationErrorTest.o"
 	@echo "... tests/ValidationErrorTest.i"
 	@echo "... tests/ValidationErrorTest.s"
+	@echo "... tests/VaultHeaderTest.o"
+	@echo "... tests/VaultHeaderTest.i"
+	@echo "... tests/VaultHeaderTest.s"
 .PHONY : help
 
 

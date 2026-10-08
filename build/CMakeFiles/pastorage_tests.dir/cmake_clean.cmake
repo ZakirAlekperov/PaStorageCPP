@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.o.d"
   "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o"
   "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o.d"
+  "CMakeFiles/pastorage_tests.dir/tests/VaultHeaderTest.cpp.o"
+  "CMakeFiles/pastorage_tests.dir/tests/VaultHeaderTest.cpp.o.d"
   "pastorage_tests"
   "pastorage_tests.pdb"
   "pastorage_tests_e3b0c442_tests.cmake"

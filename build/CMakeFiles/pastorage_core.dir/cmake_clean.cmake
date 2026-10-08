@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.o.d"
   "CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o"
   "CMakeFiles/pastorage_core.dir/src/core/ValidationError.cpp.o.d"
+  "CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.o"
+  "CMakeFiles/pastorage_core.dir/src/core/VaultHeader.cpp.o.d"
   "libpastorage_core.a"
   "libpastorage_core.pdb"
 )

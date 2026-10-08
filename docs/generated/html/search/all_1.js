@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emptytitle_0',['EmptyTitle',['../_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97',1,'ValidationError.h']]]
+  ['deserialize_0',['deserialize',['../class_vault_header.html#a202a66adb796e910fe082e91f55f2d39',1,'VaultHeader']]]
 ];

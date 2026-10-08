@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "celmpstuvw",
+  0: "cdelmpstuvw",
   1: "ptuv",
   2: "mptuv",
-  3: "cmpstuv",
-  4: "v",
-  5: "ew",
-  6: "lt"
+  3: "cdmpstuv",
+  4: "sv",
+  5: "v",
+  6: "ew",
+  7: "lt"
 };
 
 var indexSectionNames =
@@ -15,9 +16,10 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "enums",
-  5: "enumvalues",
-  6: "pages"
+  4: "variables",
+  5: "enums",
+  6: "enumvalues",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -26,8 +28,9 @@ var indexSectionLabels =
   1: "Classes",
   2: "Files",
   3: "Functions",
-  4: "Enumerations",
-  5: "Enumerator",
-  6: "Pages"
+  4: "Variables",
+  5: "Enumerations",
+  6: "Enumerator",
+  7: "Pages"
 };
 

@@ -1,10 +1,10 @@
-Start testing: Oct 08 16:20 MSK
+Start testing: Oct 08 16:38 MSK
 ----------------------------------------------------------
-1/29 Testing: PasswordEntryTest.StoresTitle
-1/29 Test: PasswordEntryTest.StoresTitle
+1/35 Testing: PasswordEntryTest.StoresTitle
+1/35 Test: PasswordEntryTest.StoresTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresTitle" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.StoresTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,15 +23,15 @@ Note: Google Test filter = PasswordEntryTest.StoresTitle
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresTitle" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.StoresTitle" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.StoresTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/29 Testing: PasswordEntryTest.StoresUsername
-2/29 Test: PasswordEntryTest.StoresUsername
+2/35 Testing: PasswordEntryTest.StoresUsername
+2/35 Test: PasswordEntryTest.StoresUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresUsername" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.StoresUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -50,15 +50,15 @@ Note: Google Test filter = PasswordEntryTest.StoresUsername
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresUsername" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.StoresUsername" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.StoresUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/29 Testing: PasswordEntryTest.UpdatesUsername
-3/29 Test: PasswordEntryTest.UpdatesUsername
+3/35 Testing: PasswordEntryTest.UpdatesUsername
+3/35 Test: PasswordEntryTest.UpdatesUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.UpdatesUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.UpdatesUsername" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.UpdatesUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,15 +77,15 @@ Note: Google Test filter = PasswordEntryTest.UpdatesUsername
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.UpdatesUsername" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.UpdatesUsername" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.UpdatesUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/29 Testing: PasswordEntryTest.RejectsEmptyTitle
-4/29 Test: PasswordEntryTest.RejectsEmptyTitle
+4/35 Testing: PasswordEntryTest.RejectsEmptyTitle
+4/35 Test: PasswordEntryTest.RejectsEmptyTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitle" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,15 +104,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitle
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitle" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitle" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsEmptyTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/29 Testing: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
-5/29 Test: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
+5/35 Testing: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
+5/35 Test: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithoutUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -128,18 +128,18 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitleWithoutUsername
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsEmptyTitleWithoutUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/29 Testing: PasswordEntryTest.RejectsEmptyTitleWithUsername
-6/29 Test: PasswordEntryTest.RejectsEmptyTitleWithUsername
+6/35 Testing: PasswordEntryTest.RejectsEmptyTitleWithUsername
+6/35 Test: PasswordEntryTest.RejectsEmptyTitleWithUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitleWithUsername" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -155,18 +155,18 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitleWithUsername
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitleWithUsername" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithUsername" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsEmptyTitleWithUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/29 Testing: PasswordEntryTest.RejectsWhitespaceOnlyTitle
-7/29 Test: PasswordEntryTest.RejectsWhitespaceOnlyTitle
+7/35 Testing: PasswordEntryTest.RejectsWhitespaceOnlyTitle
+7/35 Test: PasswordEntryTest.RejectsWhitespaceOnlyTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsWhitespaceOnlyTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsWhitespaceOnlyTitle" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceOnlyTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -185,15 +185,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsWhitespaceOnlyTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsWhitespaceOnlyTitle" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceOnlyTitle" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsWhitespaceOnlyTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/29 Testing: PasswordEntryTest.EmptyTitleHasSpecificError
-8/29 Test: PasswordEntryTest.EmptyTitleHasSpecificError
+8/35 Testing: PasswordEntryTest.EmptyTitleHasSpecificError
+8/35 Test: PasswordEntryTest.EmptyTitleHasSpecificError
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.EmptyTitleHasSpecificError" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.EmptyTitleHasSpecificError" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.EmptyTitleHasSpecificError" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -212,15 +212,15 @@ Note: Google Test filter = PasswordEntryTest.EmptyTitleHasSpecificError
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.EmptyTitleHasSpecificError" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.EmptyTitleHasSpecificError" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.EmptyTitleHasSpecificError" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/29 Testing: PasswordEntryTest.RejectsMixedWhitespaceTitle
-9/29 Test: PasswordEntryTest.RejectsMixedWhitespaceTitle
+9/35 Testing: PasswordEntryTest.RejectsMixedWhitespaceTitle
+9/35 Test: PasswordEntryTest.RejectsMixedWhitespaceTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsMixedWhitespaceTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsMixedWhitespaceTitle" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsMixedWhitespaceTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -239,15 +239,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsMixedWhitespaceTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsMixedWhitespaceTitle" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsMixedWhitespaceTitle" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsMixedWhitespaceTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/29 Testing: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
-10/29 Test: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
+10/35 Testing: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
+10/35 Test: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.PreservesTitleWithSurroundingSpaces" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -266,15 +266,15 @@ Note: Google Test filter = PasswordEntryTest.PreservesTitleWithSurroundingSpaces
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.PreservesTitleWithSurroundingSpaces" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/29 Testing: PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
-11/29 Test: PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
+11/35 Testing: PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
+11/35 Test: PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -293,15 +293,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsWhitespaceUsernameOnCreation" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/29 Testing: PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
-12/29 Test: PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
+12/35 Testing: PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
+12/35 Test: PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -320,15 +320,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/29 Testing: PasswordEntryTest.PreservesUsernameOnValidationFailure
-13/29 Test: PasswordEntryTest.PreservesUsernameOnValidationFailure
+13/35 Testing: PasswordEntryTest.PreservesUsernameOnValidationFailure
+13/35 Test: PasswordEntryTest.PreservesUsernameOnValidationFailure
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.PreservesUsernameOnValidationFailure" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.PreservesUsernameOnValidationFailure" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.PreservesUsernameOnValidationFailure" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -347,15 +347,15 @@ Note: Google Test filter = PasswordEntryTest.PreservesUsernameOnValidationFailur
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.PreservesUsernameOnValidationFailure" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.PreservesUsernameOnValidationFailure" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.PreservesUsernameOnValidationFailure" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/29 Testing: PasswordEntryTest.AllowsClearingUsername
-14/29 Test: PasswordEntryTest.AllowsClearingUsername
+14/35 Testing: PasswordEntryTest.AllowsClearingUsername
+14/35 Test: PasswordEntryTest.AllowsClearingUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.AllowsClearingUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.AllowsClearingUsername" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.AllowsClearingUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -374,15 +374,15 @@ Note: Google Test filter = PasswordEntryTest.AllowsClearingUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.AllowsClearingUsername" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.AllowsClearingUsername" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.AllowsClearingUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/29 Testing: PasswordEntryTest.UpdatesOnlySelectedEntry
-15/29 Test: PasswordEntryTest.UpdatesOnlySelectedEntry
+15/35 Testing: PasswordEntryTest.UpdatesOnlySelectedEntry
+15/35 Test: PasswordEntryTest.UpdatesOnlySelectedEntry
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.UpdatesOnlySelectedEntry" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.UpdatesOnlySelectedEntry" start time: Oct 08 16:20 MSK
+"PasswordEntryTest.UpdatesOnlySelectedEntry" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -401,15 +401,15 @@ Note: Google Test filter = PasswordEntryTest.UpdatesOnlySelectedEntry
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.UpdatesOnlySelectedEntry" end time: Oct 08 16:20 MSK
+"PasswordEntryTest.UpdatesOnlySelectedEntry" end time: Oct 08 16:38 MSK
 "PasswordEntryTest.UpdatesOnlySelectedEntry" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/29 Testing: TitleValidatorTest.AcceptsValidTitle
-16/29 Test: TitleValidatorTest.AcceptsValidTitle
+16/35 Testing: TitleValidatorTest.AcceptsValidTitle
+16/35 Test: TitleValidatorTest.AcceptsValidTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.AcceptsValidTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.AcceptsValidTitle" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.AcceptsValidTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -428,15 +428,15 @@ Note: Google Test filter = TitleValidatorTest.AcceptsValidTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.AcceptsValidTitle" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.AcceptsValidTitle" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.AcceptsValidTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/29 Testing: TitleValidatorTest.RejectsEmptyTitle
-17/29 Test: TitleValidatorTest.RejectsEmptyTitle
+17/35 Testing: TitleValidatorTest.RejectsEmptyTitle
+17/35 Test: TitleValidatorTest.RejectsEmptyTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.RejectsEmptyTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.RejectsEmptyTitle" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.RejectsEmptyTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -455,15 +455,15 @@ Note: Google Test filter = TitleValidatorTest.RejectsEmptyTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.RejectsEmptyTitle" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.RejectsEmptyTitle" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.RejectsEmptyTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/29 Testing: TitleValidatorTest.RejectsWhitespaceTitle
-18/29 Test: TitleValidatorTest.RejectsWhitespaceTitle
+18/35 Testing: TitleValidatorTest.RejectsWhitespaceTitle
+18/35 Test: TitleValidatorTest.RejectsWhitespaceTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.RejectsWhitespaceTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.RejectsWhitespaceTitle" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.RejectsWhitespaceTitle" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -482,15 +482,15 @@ Note: Google Test filter = TitleValidatorTest.RejectsWhitespaceTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.RejectsWhitespaceTitle" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.RejectsWhitespaceTitle" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.RejectsWhitespaceTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/29 Testing: TitleValidatorTest.AcceptsSurroundingSpaces
-19/29 Test: TitleValidatorTest.AcceptsSurroundingSpaces
+19/35 Testing: TitleValidatorTest.AcceptsSurroundingSpaces
+19/35 Test: TitleValidatorTest.AcceptsSurroundingSpaces
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.AcceptsSurroundingSpaces" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.AcceptsSurroundingSpaces" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.AcceptsSurroundingSpaces" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -509,15 +509,15 @@ Note: Google Test filter = TitleValidatorTest.AcceptsSurroundingSpaces
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.AcceptsSurroundingSpaces" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.AcceptsSurroundingSpaces" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.AcceptsSurroundingSpaces" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/29 Testing: TitleValidatorTest.DistinguishesValidationErrors
-20/29 Test: TitleValidatorTest.DistinguishesValidationErrors
+20/35 Testing: TitleValidatorTest.DistinguishesValidationErrors
+20/35 Test: TitleValidatorTest.DistinguishesValidationErrors
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.DistinguishesValidationErrors" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.DistinguishesValidationErrors" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.DistinguishesValidationErrors" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -536,15 +536,15 @@ Note: Google Test filter = TitleValidatorTest.DistinguishesValidationErrors
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.DistinguishesValidationErrors" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.DistinguishesValidationErrors" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.DistinguishesValidationErrors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/29 Testing: TitleValidatorTest.EmptyTitleHasErrorCode
-21/29 Test: TitleValidatorTest.EmptyTitleHasErrorCode
+21/35 Testing: TitleValidatorTest.EmptyTitleHasErrorCode
+21/35 Test: TitleValidatorTest.EmptyTitleHasErrorCode
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.EmptyTitleHasErrorCode" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.EmptyTitleHasErrorCode" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.EmptyTitleHasErrorCode" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -563,15 +563,15 @@ Note: Google Test filter = TitleValidatorTest.EmptyTitleHasErrorCode
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.EmptyTitleHasErrorCode" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.EmptyTitleHasErrorCode" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.EmptyTitleHasErrorCode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-22/29 Testing: TitleValidatorTest.WhitespaceTitleHasErrorCode
-22/29 Test: TitleValidatorTest.WhitespaceTitleHasErrorCode
+22/35 Testing: TitleValidatorTest.WhitespaceTitleHasErrorCode
+22/35 Test: TitleValidatorTest.WhitespaceTitleHasErrorCode
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.WhitespaceTitleHasErrorCode" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"TitleValidatorTest.WhitespaceTitleHasErrorCode" start time: Oct 08 16:20 MSK
+"TitleValidatorTest.WhitespaceTitleHasErrorCode" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -590,15 +590,15 @@ Note: Google Test filter = TitleValidatorTest.WhitespaceTitleHasErrorCode
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TitleValidatorTest.WhitespaceTitleHasErrorCode" end time: Oct 08 16:20 MSK
+"TitleValidatorTest.WhitespaceTitleHasErrorCode" end time: Oct 08 16:38 MSK
 "TitleValidatorTest.WhitespaceTitleHasErrorCode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-23/29 Testing: ValidationErrorTest.StoresErrorCode
-23/29 Test: ValidationErrorTest.StoresErrorCode
+23/35 Testing: ValidationErrorTest.StoresErrorCode
+23/35 Test: ValidationErrorTest.StoresErrorCode
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=ValidationErrorTest.StoresErrorCode" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"ValidationErrorTest.StoresErrorCode" start time: Oct 08 16:20 MSK
+"ValidationErrorTest.StoresErrorCode" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -617,15 +617,15 @@ Note: Google Test filter = ValidationErrorTest.StoresErrorCode
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ValidationErrorTest.StoresErrorCode" end time: Oct 08 16:20 MSK
+"ValidationErrorTest.StoresErrorCode" end time: Oct 08 16:38 MSK
 "ValidationErrorTest.StoresErrorCode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-24/29 Testing: UsernameValidatorTest.AcceptsEmptyUsername
-24/29 Test: UsernameValidatorTest.AcceptsEmptyUsername
+24/35 Testing: UsernameValidatorTest.AcceptsEmptyUsername
+24/35 Test: UsernameValidatorTest.AcceptsEmptyUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.AcceptsEmptyUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.AcceptsEmptyUsername" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsEmptyUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -641,18 +641,18 @@ Note: Google Test filter = UsernameValidatorTest.AcceptsEmptyUsername
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.AcceptsEmptyUsername" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsEmptyUsername" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.AcceptsEmptyUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-25/29 Testing: UsernameValidatorTest.RejectsWhitespaceUsername
-25/29 Test: UsernameValidatorTest.RejectsWhitespaceUsername
+25/35 Testing: UsernameValidatorTest.RejectsWhitespaceUsername
+25/35 Test: UsernameValidatorTest.RejectsWhitespaceUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.RejectsWhitespaceUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.RejectsWhitespaceUsername" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.RejectsWhitespaceUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -671,15 +671,15 @@ Note: Google Test filter = UsernameValidatorTest.RejectsWhitespaceUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.RejectsWhitespaceUsername" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.RejectsWhitespaceUsername" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.RejectsWhitespaceUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-26/29 Testing: UsernameValidatorTest.AcceptsRegularUsername
-26/29 Test: UsernameValidatorTest.AcceptsRegularUsername
+26/35 Testing: UsernameValidatorTest.AcceptsRegularUsername
+26/35 Test: UsernameValidatorTest.AcceptsRegularUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.AcceptsRegularUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.AcceptsRegularUsername" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsRegularUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -698,15 +698,15 @@ Note: Google Test filter = UsernameValidatorTest.AcceptsRegularUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.AcceptsRegularUsername" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsRegularUsername" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.AcceptsRegularUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-27/29 Testing: UsernameValidatorTest.AcceptsEmailUsername
-27/29 Test: UsernameValidatorTest.AcceptsEmailUsername
+27/35 Testing: UsernameValidatorTest.AcceptsEmailUsername
+27/35 Test: UsernameValidatorTest.AcceptsEmailUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.AcceptsEmailUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.AcceptsEmailUsername" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsEmailUsername" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -725,15 +725,15 @@ Note: Google Test filter = UsernameValidatorTest.AcceptsEmailUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.AcceptsEmailUsername" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.AcceptsEmailUsername" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.AcceptsEmailUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-28/29 Testing: UsernameValidatorTest.RejectsMixedWhitespace
-28/29 Test: UsernameValidatorTest.RejectsMixedWhitespace
+28/35 Testing: UsernameValidatorTest.RejectsMixedWhitespace
+28/35 Test: UsernameValidatorTest.RejectsMixedWhitespace
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.RejectsMixedWhitespace" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.RejectsMixedWhitespace" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.RejectsMixedWhitespace" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -752,15 +752,15 @@ Note: Google Test filter = UsernameValidatorTest.RejectsMixedWhitespace
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.RejectsMixedWhitespace" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.RejectsMixedWhitespace" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.RejectsMixedWhitespace" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-29/29 Testing: UsernameValidatorTest.ReturnsWhitespaceUsernameCode
-29/29 Test: UsernameValidatorTest.ReturnsWhitespaceUsernameCode
+29/35 Testing: UsernameValidatorTest.ReturnsWhitespaceUsernameCode
+29/35 Test: UsernameValidatorTest.ReturnsWhitespaceUsernameCode
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=UsernameValidatorTest.ReturnsWhitespaceUsernameCode" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"UsernameValidatorTest.ReturnsWhitespaceUsernameCode" start time: Oct 08 16:20 MSK
+"UsernameValidatorTest.ReturnsWhitespaceUsernameCode" start time: Oct 08 16:38 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -779,8 +779,170 @@ Note: Google Test filter = UsernameValidatorTest.ReturnsWhitespaceUsernameCode
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"UsernameValidatorTest.ReturnsWhitespaceUsernameCode" end time: Oct 08 16:20 MSK
+"UsernameValidatorTest.ReturnsWhitespaceUsernameCode" end time: Oct 08 16:38 MSK
 "UsernameValidatorTest.ReturnsWhitespaceUsernameCode" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 08 16:20 MSK
+30/35 Testing: VaultHeaderTest.SerializesVersionOneHeader
+30/35 Test: VaultHeaderTest.SerializesVersionOneHeader
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.SerializesVersionOneHeader" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.SerializesVersionOneHeader" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.SerializesVersionOneHeader
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.SerializesVersionOneHeader
+[       OK ] VaultHeaderTest.SerializesVersionOneHeader (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.SerializesVersionOneHeader" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.SerializesVersionOneHeader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/35 Testing: VaultHeaderTest.DeserializesValidHeader
+31/35 Test: VaultHeaderTest.DeserializesValidHeader
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.DeserializesValidHeader" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.DeserializesValidHeader" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.DeserializesValidHeader
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.DeserializesValidHeader
+[       OK ] VaultHeaderTest.DeserializesValidHeader (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.DeserializesValidHeader" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.DeserializesValidHeader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/35 Testing: VaultHeaderTest.RejectsInvalidMagic
+32/35 Test: VaultHeaderTest.RejectsInvalidMagic
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.RejectsInvalidMagic" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.RejectsInvalidMagic" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.RejectsInvalidMagic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.RejectsInvalidMagic
+[       OK ] VaultHeaderTest.RejectsInvalidMagic (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.RejectsInvalidMagic" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.RejectsInvalidMagic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/35 Testing: VaultHeaderTest.RejectsUnsupportedVersion
+33/35 Test: VaultHeaderTest.RejectsUnsupportedVersion
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.RejectsUnsupportedVersion" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.RejectsUnsupportedVersion" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.RejectsUnsupportedVersion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.RejectsUnsupportedVersion
+[       OK ] VaultHeaderTest.RejectsUnsupportedVersion (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.RejectsUnsupportedVersion" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.RejectsUnsupportedVersion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/35 Testing: VaultHeaderTest.RejectsTruncatedHeader
+34/35 Test: VaultHeaderTest.RejectsTruncatedHeader
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.RejectsTruncatedHeader" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.RejectsTruncatedHeader" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.RejectsTruncatedHeader
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.RejectsTruncatedHeader
+[       OK ] VaultHeaderTest.RejectsTruncatedHeader (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.RejectsTruncatedHeader" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.RejectsTruncatedHeader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/35 Testing: VaultHeaderTest.RejectsUnknownFlags
+35/35 Test: VaultHeaderTest.RejectsUnknownFlags
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=VaultHeaderTest.RejectsUnknownFlags" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"VaultHeaderTest.RejectsUnknownFlags" start time: Oct 08 16:38 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = VaultHeaderTest.RejectsUnknownFlags
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VaultHeaderTest
+[ RUN      ] VaultHeaderTest.RejectsUnknownFlags
+[       OK ] VaultHeaderTest.RejectsUnknownFlags (0 ms)
+[----------] 1 test from VaultHeaderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VaultHeaderTest.RejectsUnknownFlags" end time: Oct 08 16:38 MSK
+"VaultHeaderTest.RejectsUnknownFlags" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 16:38 MSK

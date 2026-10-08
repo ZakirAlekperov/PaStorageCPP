@@ -1,5 +1,5 @@
 {
-  "tests": 29,
+  "tests": 35,
   "name": "AllTests",
   "testsuites": [
     {
@@ -168,6 +168,42 @@
           "name": "ReturnsWhitespaceUsernameCode",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
           "line": 90
+        }
+      ]
+    },
+    {
+      "name": "VaultHeaderTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "SerializesVersionOneHeader",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 33
+        },
+        {
+          "name": "DeserializesValidHeader",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 56
+        },
+        {
+          "name": "RejectsInvalidMagic",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 74
+        },
+        {
+          "name": "RejectsUnsupportedVersion",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 95
+        },
+        {
+          "name": "RejectsTruncatedHeader",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 115
+        },
+        {
+          "name": "RejectsUnknownFlags",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/VaultHeaderTest.cpp",
+          "line": 135
         }
       ]
     }

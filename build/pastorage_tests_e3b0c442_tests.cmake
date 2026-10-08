@@ -259,4 +259,58 @@ set_tests_properties([=[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] [==[PasswordEntryTest.PreservesUsernameOnValidationFailure]==] [==[PasswordEntryTest.AllowsClearingUsername]==] [==[PasswordEntryTest.UpdatesOnlySelectedEntry]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==] [==[UsernameValidatorTest.AcceptsEmptyUsername]==] [==[UsernameValidatorTest.RejectsWhitespaceUsername]==] [==[UsernameValidatorTest.AcceptsRegularUsername]==] [==[UsernameValidatorTest.AcceptsEmailUsername]==] [==[UsernameValidatorTest.RejectsMixedWhitespace]==] [==[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==])
+add_test([=[VaultHeaderTest.SerializesVersionOneHeader]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.SerializesVersionOneHeader]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.SerializesVersionOneHeader]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:33]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[VaultHeaderTest.DeserializesValidHeader]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.DeserializesValidHeader]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.DeserializesValidHeader]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:56]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[VaultHeaderTest.RejectsInvalidMagic]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.RejectsInvalidMagic]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.RejectsInvalidMagic]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:74]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[VaultHeaderTest.RejectsUnsupportedVersion]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.RejectsUnsupportedVersion]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.RejectsUnsupportedVersion]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:95]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[VaultHeaderTest.RejectsTruncatedHeader]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.RejectsTruncatedHeader]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.RejectsTruncatedHeader]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:115]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[VaultHeaderTest.RejectsUnknownFlags]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=VaultHeaderTest.RejectsUnknownFlags]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[VaultHeaderTest.RejectsUnknownFlags]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/VaultHeaderTest.cpp:135]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] [==[PasswordEntryTest.PreservesUsernameOnValidationFailure]==] [==[PasswordEntryTest.AllowsClearingUsername]==] [==[PasswordEntryTest.UpdatesOnlySelectedEntry]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==] [==[UsernameValidatorTest.AcceptsEmptyUsername]==] [==[UsernameValidatorTest.RejectsWhitespaceUsername]==] [==[UsernameValidatorTest.AcceptsRegularUsername]==] [==[UsernameValidatorTest.AcceptsEmailUsername]==] [==[UsernameValidatorTest.RejectsMixedWhitespace]==] [==[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==] [==[VaultHeaderTest.SerializesVersionOneHeader]==] [==[VaultHeaderTest.DeserializesValidHeader]==] [==[VaultHeaderTest.RejectsInvalidMagic]==] [==[VaultHeaderTest.RejectsUnsupportedVersion]==] [==[VaultHeaderTest.RejectsTruncatedHeader]==] [==[VaultHeaderTest.RejectsUnknownFlags]==])

@@ -1,0 +1,242 @@
+\doxysection{tests/\+\+Vault\+Header\+Test.cpp File Reference}
+\hypertarget{_vault_header_test_8cpp}{}\label{_vault_header_test_8cpp}\index{tests/VaultHeaderTest.cpp@{tests/VaultHeaderTest.cpp}}
+
+
+Модульные тесты заголовка хранилища Pa\+Storage.  
+
+
+{\ttfamily \+\#include $<$gtest/\+gtest.\+h$>$}\newline
+{\ttfamily \+\#include $<$array$>$}\newline
+{\ttfamily \+\#include $<$cstdint$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include "{}core/\+\+Vault\+Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_a066a86e7251b44f3d0ca70fdd046a58a}{TEST}} (Vault\+Header\+Test, Serializes\+Version\+One\+Header)
+\begin{DoxyCompactList}\small\item\em Проверяет сериализацию заголовка первой версии. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_a98f85a77e3f67e42075fa7940898a537}{TEST}} (Vault\+Header\+Test, Deserializes\+Valid\+Header)
+\begin{DoxyCompactList}\small\item\em Проверяет чтение корректного заголовка. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_a7e25d12c59dc37adc670d0658acc3b3f}{TEST}} (Vault\+Header\+Test, Rejects\+Invalid\+Magic)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение неверной сигнатуры. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_a090221df618a7c0c7b2cacbb9aee4c56}{TEST}} (Vault\+Header\+Test, Rejects\+Unsupported\+Version)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение неизвестной версии. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_a69d8aaa75875ef23884c67ba61339e60}{TEST}} (Vault\+Header\+Test, Rejects\+Truncated\+Header)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение неполного заголовка. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_vault_header_test_8cpp_ad98a66366e28ecf83a3972e3af57b89f}{TEST}} (Vault\+Header\+Test, Rejects\+Unknown\+Flags)
+\begin{DoxyCompactList}\small\item\em Проверяет отклонение неизвестных флагов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модульные тесты заголовка хранилища Pa\+Storage. 
+
+Проверяет бинарное представление заголовка, корректность сериализации и обработку неподдерживаемых или повреждённых данных.
+
+Тесты не выполняют криптографических операций. 
+
+Definition in file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+
+\label{_vault_header_test_8cpp_doc-func-members}
+\Hypertarget{_vault_header_test_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_vault_header_test_8cpp_a98f85a77e3f67e42075fa7940898a537}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_a98f85a77e3f67e42075fa7940898a537} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Deserializes\+Valid\+Header}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет чтение корректного заголовка. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000031}{Test}}]Vault\+Header\+Test.\+Deserializes\+Valid\+Header \end{DoxyRefDesc}
+
+
+Создаёт заголовок, сериализует его, затем восстанавливает из полученных байтов.
+
+Ожидается сохранение бинарного представления. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00056}{56}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ original;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{auto}\ bytes\ =\ original.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ restored\ =\ \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{VaultHeader::deserialize}}(bytes);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ EXPECT\_EQ(restored.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}(),\ bytes);}
+\DoxyCodeLine{00063\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_vault_header_test_8cpp_a7e25d12c59dc37adc670d0658acc3b3f}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_a7e25d12c59dc37adc670d0658acc3b3f} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Rejects\+Invalid\+Magic}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение неверной сигнатуры. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000032}{Test}}]Vault\+Header\+Test.\+Rejects\+Invalid\+Magic \end{DoxyRefDesc}
+
+
+Изменяет первый байт сигнатуры файла. Ожидается отказ десериализации. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00074}{74}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ header;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{auto}\ bytes\ =\ header.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ bytes[0]\ =\ \textcolor{charliteral}{'X'};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{VaultHeader::deserialize}}(bytes),}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00083\ \ \ \ \ );}
+\DoxyCodeLine{00084\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_vault_header_test_8cpp_a69d8aaa75875ef23884c67ba61339e60}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_a69d8aaa75875ef23884c67ba61339e60} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Rejects\+Truncated\+Header}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение неполного заголовка. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000034}{Test}}]Vault\+Header\+Test.\+Rejects\+Truncated\+Header \end{DoxyRefDesc}
+
+
+Передаёт только первые 8 байт вместо 16. Парсер должен отклонить недостаточный размер. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00115}{115}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{const}\ std::array<std::uint8\_t,\ 8>\ bytes\{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'}}
+\DoxyCodeLine{00118\ \ \ \ \ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{VaultHeader::deserialize}}(bytes),}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00123\ \ \ \ \ );}
+\DoxyCodeLine{00124\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_vault_header_test_8cpp_ad98a66366e28ecf83a3972e3af57b89f}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_ad98a66366e28ecf83a3972e3af57b89f} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Rejects\+Unknown\+Flags}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение неизвестных флагов. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000035}{Test}}]Vault\+Header\+Test.\+Rejects\+Unknown\+Flags \end{DoxyRefDesc}
+
+
+Устанавливает один из зарезервированных битов. В первой версии допустимо только нулевое значение поля flags. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00135}{135}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ header;}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{auto}\ bytes\ =\ header.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}();}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ bytes[10]\ =\ 1;}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{VaultHeader::deserialize}}(bytes),}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00144\ \ \ \ \ );}
+\DoxyCodeLine{00145\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_vault_header_test_8cpp_a090221df618a7c0c7b2cacbb9aee4c56}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_a090221df618a7c0c7b2cacbb9aee4c56} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Rejects\+Unsupported\+Version}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет отклонение неизвестной версии. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000033}{Test}}]Vault\+Header\+Test.\+Rejects\+Unsupported\+Version \end{DoxyRefDesc}
+
+
+Изменяет младший байт поля версии с 1 на 2. Файл с неподдерживаемой версией не должен восприниматься как корректный. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00095}{95}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ header;}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{auto}\ bytes\ =\ header.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ bytes[8]\ =\ 2;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_vault_header_a202a66adb796e910fe082e91f55f2d39}{VaultHeader::deserialize}}(bytes),}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ std::invalid\_argument}
+\DoxyCodeLine{00104\ \ \ \ \ );}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_vault_header_test_8cpp_a066a86e7251b44f3d0ca70fdd046a58a}\index{VaultHeaderTest.cpp@{VaultHeaderTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!VaultHeaderTest.cpp@{VaultHeaderTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{_vault_header_test_8cpp_a066a86e7251b44f3d0ca70fdd046a58a} 
+TEST (\begin{DoxyParamCaption}\item[{Vault\+Header\+Test}]{}{, }\item[{Serializes\+Version\+One\+Header}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет сериализацию заголовка первой версии. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000030}{Test}}]Vault\+Header\+Test.\+Serializes\+Version\+One\+Header \end{DoxyRefDesc}
+
+
+Создаёт стандартный заголовок и сравнивает его с ожидаемой последовательностью из 16 байт.
+
+Это закрепляет бинарный формат независимо от платформы и порядка байтов процессора. 
+
+Definition at line \doxymbox{\hyperlink{_vault_header_test_8cpp_source_l00033}{33}} of file \doxymbox{\hyperlink{_vault_header_test_8cpp_source}{Vault\+Header\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{class_vault_header}{VaultHeader}}\ header;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{const}\ std::array<std::uint8\_t,\ 16>\ expected\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ 1,\ 0,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ 0,\ 0,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ 16,\ 0,\ 0,\ 0}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ EXPECT\_EQ(header.\doxymbox{\hyperlink{class_vault_header_a243ab3d35028f659c53fcc373b7c2450}{serialize}}(),\ expected);}
+\DoxyCodeLine{00044\ \}}
+
+\end{DoxyCode}
