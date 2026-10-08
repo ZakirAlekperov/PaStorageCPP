@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_validation_er
 </div><!--header-->
 <div class="contents">
 
-<p>Объявление типизированных ошибок валидации.  
+<p>Объявление типов ошибок валидации PaStorage.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -124,19 +124,20 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_validation_er
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:ValidationError" id="r_ValidationError"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_validation_error.html">ValidationError</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение, возникающее при ошибке валидации.  <a href="class_validation_error.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение при некорректных входных данных.  <a href="class_validation_error.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:acfe7b59a2a3fdbe0815d07309dd15f86" id="r_acfe7b59a2a3fdbe0815d07309dd15f86"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#acfe7b59a2a3fdbe0815d07309dd15f86">ValidationErrorCode</a> { <a class="el" href="#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">EmptyTitle</a>
 , <a class="el" href="#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">WhitespaceTitle</a>
+, <a class="el" href="#acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992">WhitespaceUsername</a>
  }</td></tr>
 <tr class="memdesc:acfe7b59a2a3fdbe0815d07309dd15f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коды ошибок проверки входных данных.  <a href="#acfe7b59a2a3fdbe0815d07309dd15f86">More...</a><br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Объявление типизированных ошибок валидации. </p>
-<p>Предоставляет перечисление кодов ошибок и собственный класс исключения PaStorage.</p>
-<p>Позволяет различать ошибки без анализа диагностического текста. </p>
+<div class="textblock"><p>Объявление типов ошибок валидации PaStorage. </p>
+<p>Содержит перечисление кодов ошибок и класс исключения для обработки некорректных данных.</p>
+<p>Позволяет различать ошибки по программному коду, независимо от языка диагностического сообщения. </p>
 
 <p class="definition">Definition in file <a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>.</p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
@@ -161,21 +162,24 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Коды ошибок проверки входных данных. </p>
-<p>Каждый элемент перечисления обозначает определённую причину отказа валидации. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97" name="acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97"></a>EmptyTitle&#160;</td><td class="fielddoc"><p>Название сервиса пустое. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97" name="acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97"></a>EmptyTitle&#160;</td><td class="fielddoc"><p>Пустое название сервиса. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339" name="acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339"></a>WhitespaceTitle&#160;</td><td class="fielddoc"><p>Название состоит из пробелов. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992" name="acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992"></a>WhitespaceUsername&#160;</td><td class="fielddoc"><p>Логин состоит из пробелов. </p>
+</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_validation_error_8h_source.html#l00028">28</a> of file <a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                               {</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_enumvalue" href="#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">EmptyTitle</a>,       </div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_enumvalue" href="#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">WhitespaceTitle</a>   </div>
-<div class="line"><span class="lineno">   31</span>};</div>
-<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97"><div class="ttname"><a href="#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">ValidationErrorCode::EmptyTitle</a></div><div class="ttdeci">@ EmptyTitle</div><div class="ttdoc">Название сервиса пустое.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00029">ValidationError.h:29</a></div></div>
-<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339"><div class="ttname"><a href="#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">ValidationErrorCode::WhitespaceTitle</a></div><div class="ttdeci">@ WhitespaceTitle</div><div class="ttdoc">Название состоит из пробелов.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00030">ValidationError.h:30</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_validation_error_8h_source.html#l00024">24</a> of file <a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                               {</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_enumvalue" href="#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">EmptyTitle</a>,         </div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_enumvalue" href="#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">WhitespaceTitle</a>,    </div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="#acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992">WhitespaceUsername</a>  </div>
+<div class="line"><span class="lineno">   28</span>};</div>
+<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97"><div class="ttname"><a href="#acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97">ValidationErrorCode::EmptyTitle</a></div><div class="ttdeci">@ EmptyTitle</div><div class="ttdoc">Пустое название сервиса.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00025">ValidationError.h:25</a></div></div>
+<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992"><div class="ttname"><a href="#acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992">ValidationErrorCode::WhitespaceUsername</a></div><div class="ttdeci">@ WhitespaceUsername</div><div class="ttdoc">Логин состоит из пробелов.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00027">ValidationError.h:27</a></div></div>
+<div class="ttc" id="a_validation_error_8h_html_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339"><div class="ttname"><a href="#acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339">ValidationErrorCode::WhitespaceTitle</a></div><div class="ttdeci">@ WhitespaceTitle</div><div class="ttdoc">Название состоит из пробелов.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8h_source.html#l00026">ValidationError.h:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

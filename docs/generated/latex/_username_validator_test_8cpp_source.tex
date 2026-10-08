@@ -1,0 +1,60 @@
+\doxysection{Username\+Validator\+Test.\+cpp}
+\hypertarget{_username_validator_test_8cpp_source}{}\label{_username_validator_test_8cpp_source}\index{tests/UsernameValidatorTest.cpp@{tests/UsernameValidatorTest.cpp}}
+\doxymbox{\hyperlink{_username_validator_test_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_username_validator_8h}{core/UsernameValidator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_validation_error_8h}{core/ValidationError.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00029}\doxymbox{\hyperlink{_username_validator_test_8cpp_a1c737cab41088d6d9fa859412122b066}{00029}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ AcceptsEmptyUsername)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00030}00030\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00032}00032\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00043}\doxymbox{\hyperlink{_username_validator_test_8cpp_a68e3651dc325eb9e7c22e09ba98254dc}{00043}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ RejectsWhitespaceUsername)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00044}00044\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}}),}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00047}00047\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00048}00048\ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00055}\doxymbox{\hyperlink{_username_validator_test_8cpp_a0a6e95ef9a6841babf1a64f0dd3323c0}{00055}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ AcceptsRegularUsername)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00056}00056\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}zakir"{}})}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00058}00058\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00059}00059\ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00065}\doxymbox{\hyperlink{_username_validator_test_8cpp_abc0f165d67e52c2909d24fb81870e949}{00065}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ AcceptsEmailUsername)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00066}00066\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}user@example.com"{}})}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00068}00068\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00069}00069\ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00075}\doxymbox{\hyperlink{_username_validator_test_8cpp_a5d8f1847eb205b3bf2b66f06485cb572}{00075}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ RejectsMixedWhitespace)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00076}00076\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\ "{}}),}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00079}00079\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00080}00080\ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00090}\doxymbox{\hyperlink{_username_validator_test_8cpp_ac4683a423a8d8f28872df2d3eb87a1ea}{00090}}\ \doxymbox{\hyperlink{_password_entry_test_8cpp_a18c9bf669cfb0f027415d9ea652925c8}{TEST}}(UsernameValidatorTest,\ ReturnsWhitespaceUsernameCode)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ FAIL()\ <<\ \textcolor{stringliteral}{"{}Ожидалось\ исключение\ ValidationError"{}};}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00094}00094\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\&\ error)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ error.\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}(),}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{ValidationErrorCode::WhitespaceUsername}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_test_8cpp_source_l00101}00101\ \}}
+
+\end{DoxyCode}

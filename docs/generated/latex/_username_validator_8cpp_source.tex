@@ -1,0 +1,25 @@
+\doxysection{Username\+Validator.\+cpp}
+\hypertarget{_username_validator_8cpp_source}{}\label{_username_validator_8cpp_source}\index{src/core/UsernameValidator.cpp@{src/core/UsernameValidator.cpp}}
+\doxymbox{\hyperlink{_username_validator_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_username_validator_8h}{UsernameValidator.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_validation_error_8h}{ValidationError.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00025}\doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{00025}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(std::string\_view\ username)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (username.empty())\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (username.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\{}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{ValidationErrorCode::WhitespaceUsername}},}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Имя\ пользователя\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_username_validator_8cpp_source_l00038}00038\ \}}
+
+\end{DoxyCode}

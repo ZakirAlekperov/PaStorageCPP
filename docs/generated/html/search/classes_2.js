@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validationerror_0',['ValidationError',['../class_validation_error.html',1,'']]]
+  ['usernamevalidator_0',['UsernameValidator',['../class_username_validator.html',1,'']]]
 ];

@@ -2,7 +2,7 @@ add_test([=[PasswordEntryTest.StoresTitle]=]  /Users/zakiralekperov/Documents/Pa
 set_tests_properties([=[PasswordEntryTest.StoresTitle]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:28]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:31]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -11,7 +11,7 @@ add_test([=[PasswordEntryTest.StoresUsername]=]  /Users/zakiralekperov/Documents
 set_tests_properties([=[PasswordEntryTest.StoresUsername]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:44]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:47]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -20,7 +20,7 @@ add_test([=[PasswordEntryTest.UpdatesUsername]=]  /Users/zakiralekperov/Document
 set_tests_properties([=[PasswordEntryTest.UpdatesUsername]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:60]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:63]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -29,7 +29,7 @@ add_test([=[PasswordEntryTest.RejectsEmptyTitle]=]  /Users/zakiralekperov/Docume
 set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitle]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:81]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:84]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -38,7 +38,7 @@ add_test([=[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]=]  /Users/zakira
 set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:100]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:103]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -47,7 +47,7 @@ add_test([=[PasswordEntryTest.RejectsEmptyTitleWithUsername]=]  /Users/zakiralek
 set_tests_properties([=[PasswordEntryTest.RejectsEmptyTitleWithUsername]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:124]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:127]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -56,7 +56,7 @@ add_test([=[PasswordEntryTest.RejectsWhitespaceOnlyTitle]=]  /Users/zakiralekper
 set_tests_properties([=[PasswordEntryTest.RejectsWhitespaceOnlyTitle]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:149]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:152]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -65,7 +65,7 @@ add_test([=[PasswordEntryTest.EmptyTitleHasSpecificError]=]  /Users/zakiralekper
 set_tests_properties([=[PasswordEntryTest.EmptyTitleHasSpecificError]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:165]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:168]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -74,7 +74,7 @@ add_test([=[PasswordEntryTest.RejectsMixedWhitespaceTitle]=]  /Users/zakiralekpe
 set_tests_properties([=[PasswordEntryTest.RejectsMixedWhitespaceTitle]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:189]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:192]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -83,7 +83,25 @@ add_test([=[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]=]  /Users/zak
 set_tests_properties([=[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]=]
   PROPERTIES
     
-    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:210]==]
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:213]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:229]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:251]==]
     WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
@@ -160,4 +178,58 @@ set_tests_properties([=[ValidationErrorTest.StoresErrorCode]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==])
+add_test([=[UsernameValidatorTest.AcceptsEmptyUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.AcceptsEmptyUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.AcceptsEmptyUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:29]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[UsernameValidatorTest.RejectsWhitespaceUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.RejectsWhitespaceUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.RejectsWhitespaceUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:43]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[UsernameValidatorTest.AcceptsRegularUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.AcceptsRegularUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.AcceptsRegularUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:55]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[UsernameValidatorTest.AcceptsEmailUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.AcceptsEmailUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.AcceptsEmailUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:65]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[UsernameValidatorTest.RejectsMixedWhitespace]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.RejectsMixedWhitespace]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.RejectsMixedWhitespace]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:75]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/UsernameValidatorTest.cpp:90]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==] [==[UsernameValidatorTest.AcceptsEmptyUsername]==] [==[UsernameValidatorTest.RejectsWhitespaceUsername]==] [==[UsernameValidatorTest.AcceptsRegularUsername]==] [==[UsernameValidatorTest.AcceptsEmailUsername]==] [==[UsernameValidatorTest.RejectsMixedWhitespace]==] [==[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==])

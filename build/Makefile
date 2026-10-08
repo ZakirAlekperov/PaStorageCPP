@@ -310,6 +310,30 @@ src/core/TitleValidator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.s
 .PHONY : src/core/TitleValidator.cpp.s
 
+src/core/UsernameValidator.o: src/core/UsernameValidator.cpp.o
+.PHONY : src/core/UsernameValidator.o
+
+# target to build an object file
+src/core/UsernameValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.o
+.PHONY : src/core/UsernameValidator.cpp.o
+
+src/core/UsernameValidator.i: src/core/UsernameValidator.cpp.i
+.PHONY : src/core/UsernameValidator.i
+
+# target to preprocess a source file
+src/core/UsernameValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.i
+.PHONY : src/core/UsernameValidator.cpp.i
+
+src/core/UsernameValidator.s: src/core/UsernameValidator.cpp.s
+.PHONY : src/core/UsernameValidator.s
+
+# target to generate assembly for a file
+src/core/UsernameValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/UsernameValidator.cpp.s
+.PHONY : src/core/UsernameValidator.cpp.s
+
 src/core/ValidationError.o: src/core/ValidationError.cpp.o
 .PHONY : src/core/ValidationError.o
 
@@ -406,6 +430,30 @@ tests/TitleValidatorTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s
 .PHONY : tests/TitleValidatorTest.cpp.s
 
+tests/UsernameValidatorTest.o: tests/UsernameValidatorTest.cpp.o
+.PHONY : tests/UsernameValidatorTest.o
+
+# target to build an object file
+tests/UsernameValidatorTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.o
+.PHONY : tests/UsernameValidatorTest.cpp.o
+
+tests/UsernameValidatorTest.i: tests/UsernameValidatorTest.cpp.i
+.PHONY : tests/UsernameValidatorTest.i
+
+# target to preprocess a source file
+tests/UsernameValidatorTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.i
+.PHONY : tests/UsernameValidatorTest.cpp.i
+
+tests/UsernameValidatorTest.s: tests/UsernameValidatorTest.cpp.s
+.PHONY : tests/UsernameValidatorTest.s
+
+# target to generate assembly for a file
+tests/UsernameValidatorTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.s
+.PHONY : tests/UsernameValidatorTest.cpp.s
+
 tests/ValidationErrorTest.o: tests/ValidationErrorTest.cpp.o
 .PHONY : tests/ValidationErrorTest.o
 
@@ -456,6 +504,9 @@ help:
 	@echo "... src/core/TitleValidator.o"
 	@echo "... src/core/TitleValidator.i"
 	@echo "... src/core/TitleValidator.s"
+	@echo "... src/core/UsernameValidator.o"
+	@echo "... src/core/UsernameValidator.i"
+	@echo "... src/core/UsernameValidator.s"
 	@echo "... src/core/ValidationError.o"
 	@echo "... src/core/ValidationError.i"
 	@echo "... src/core/ValidationError.s"
@@ -468,6 +519,9 @@ help:
 	@echo "... tests/TitleValidatorTest.o"
 	@echo "... tests/TitleValidatorTest.i"
 	@echo "... tests/TitleValidatorTest.s"
+	@echo "... tests/UsernameValidatorTest.o"
+	@echo "... tests/UsernameValidatorTest.i"
+	@echo "... tests/UsernameValidatorTest.s"
 	@echo "... tests/ValidationErrorTest.o"
 	@echo "... tests/ValidationErrorTest.i"
 	@echo "... tests/ValidationErrorTest.s"

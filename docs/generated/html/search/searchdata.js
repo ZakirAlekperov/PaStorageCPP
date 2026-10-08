@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
   0: "celmpstuvw",
-  1: "ptv",
-  2: "mptv",
+  1: "ptuv",
+  2: "mptuv",
   3: "cmpstuv",
   4: "v",
   5: "ew",

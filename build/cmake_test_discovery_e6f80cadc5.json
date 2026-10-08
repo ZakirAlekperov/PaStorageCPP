@@ -1,60 +1,70 @@
 {
-  "tests": 18,
+  "tests": 26,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PasswordEntryTest",
-      "tests": 10,
+      "tests": 12,
       "testsuite": [
         {
           "name": "StoresTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 28
+          "line": 31
         },
         {
           "name": "StoresUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 44
+          "line": 47
         },
         {
           "name": "UpdatesUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 60
+          "line": 63
         },
         {
           "name": "RejectsEmptyTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 81
+          "line": 84
         },
         {
           "name": "RejectsEmptyTitleWithoutUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 100
+          "line": 103
         },
         {
           "name": "RejectsEmptyTitleWithUsername",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 124
+          "line": 127
         },
         {
           "name": "RejectsWhitespaceOnlyTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 149
+          "line": 152
         },
         {
           "name": "EmptyTitleHasSpecificError",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 165
+          "line": 168
         },
         {
           "name": "RejectsMixedWhitespaceTitle",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 189
+          "line": 192
         },
         {
           "name": "PreservesTitleWithSurroundingSpaces",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
-          "line": 210
+          "line": 213
+        },
+        {
+          "name": "RejectsWhitespaceUsernameOnCreation",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 229
+        },
+        {
+          "name": "RejectsWhitespaceUsernameOnUpdate",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
+          "line": 251
         }
       ]
     },
@@ -107,6 +117,42 @@
           "name": "StoresErrorCode",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/ValidationErrorTest.cpp",
           "line": 26
+        }
+      ]
+    },
+    {
+      "name": "UsernameValidatorTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "AcceptsEmptyUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 29
+        },
+        {
+          "name": "RejectsWhitespaceUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 43
+        },
+        {
+          "name": "AcceptsRegularUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 55
+        },
+        {
+          "name": "AcceptsEmailUsername",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 65
+        },
+        {
+          "name": "RejectsMixedWhitespace",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 75
+        },
+        {
+          "name": "ReturnsWhitespaceUsernameCode",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/UsernameValidatorTest.cpp",
+          "line": 90
         }
       ]
     }

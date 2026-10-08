@@ -14,6 +14,7 @@
 
 #include "PasswordEntry.h"
 #include "TitleValidator.h"
+#include "UsernameValidator.h"
 
 #include <exception>
 #include <string>
@@ -32,25 +33,22 @@ PasswordEntry::PasswordEntry(std::string title)
 }
 
 
+
 /**
- * @brief Создаёт запись с названием и логином.
+ * @brief Создаёт запись сервиса.
  *
  * @details
- * Инициализирует поля объекта посредством
- * перемещения переданных строк.
+ * Инициализирует поля title и username.
  *
- * Проверка названия делегируется TitleValidator.
- * При некорректном названии конструктор выбрасывает
- * исключение и объект не создаётся.
+ * Перед завершением создания объекта вызывает
+ * независимые валидаторы для проверки обоих значений.
  *
  * @param title Название сервиса.
  * @param username Имя пользователя.
  *
  * @throws ValidationError
- *         Если название пустое или состоит
- *         исключительно из ASCII-пробельных символов.
- *
- * @see ValidationErrorCode
+ *         Если название или имя пользователя
+ *         не соответствуют правилам валидации.
  */
 PasswordEntry::PasswordEntry(
     std::string title,
@@ -60,7 +58,9 @@ PasswordEntry::PasswordEntry(
       username_{std::move(username)} {
 
     TitleValidator::validate(title_);
+    UsernameValidator::validate(username_);
 }
+
 
 
 /**
@@ -77,13 +77,28 @@ std::string PasswordEntry::username() const{
     return username_;
 }
 
+
 /**
- * @brief Заменяет сохранённое имя пользователя.
+ * @brief Изменяет имя пользователя.
  *
  * @details
- * Использует перемещающее присваивание std::string,
- * чтобы по возможности избежать лишнего копирования.
+ * Сначала проверяет новое значение через
+ * UsernameValidator.
+ *
+ * Только после успешной проверки заменяет
+ * сохранённое имя пользователя.
+ *
+ * Если проверка завершается исключением,
+ * прежнее значение username сохраняется.
+ *
+ * @param username Новое имя пользователя.
+ *
+ * @throws ValidationError
+ *         Если новое значение состоит
+ *         исключительно из ASCII-пробельных символов.
  */
-void PasswordEntry::setUsername(std::string username){
+void PasswordEntry::setUsername(std::string username) {
+    UsernameValidator::validate(username);
+
     username_ = std::move(username);
 }

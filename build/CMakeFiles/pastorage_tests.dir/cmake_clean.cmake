@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o.d"
   "CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o"
   "CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o.d"
+  "CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.o"
+  "CMakeFiles/pastorage_tests.dir/tests/UsernameValidatorTest.cpp.o.d"
   "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o"
   "CMakeFiles/pastorage_tests.dir/tests/ValidationErrorTest.cpp.o.d"
   "pastorage_tests"

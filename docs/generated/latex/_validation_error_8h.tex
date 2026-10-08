@@ -2,7 +2,7 @@
 \hypertarget{_validation_error_8h}{}\label{_validation_error_8h}\index{src/core/ValidationError.h@{src/core/ValidationError.h}}
 
 
-Объявление типизированных ошибок валидации.  
+Объявление типов ошибок валидации Pa\+Storage.  
 
 
 {\ttfamily \+\#include $<$stdexcept$>$}\newline
@@ -11,22 +11,23 @@
 \begin{DoxyCompactItemize}
 \item 
 class \doxymbox{\hyperlink{class_validation_error}{Validation\+Error}}
-\begin{DoxyCompactList}\small\item\em Исключение, возникающее при ошибке валидации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Исключение при некорректных входных данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
 enum class \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} \{ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{Empty\+Title}}
 , \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{Whitespace\+Title}}
+, \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{Whitespace\+Username}}
  \}
 \begin{DoxyCompactList}\small\item\em Коды ошибок проверки входных данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Объявление типизированных ошибок валидации. 
+Объявление типов ошибок валидации Pa\+Storage. 
 
-Предоставляет перечисление кодов ошибок и собственный класс исключения Pa\+Storage.
+Содержит перечисление кодов ошибок и класс исключения для обработки некорректных данных.
 
-Позволяет различать ошибки без анализа диагностического текста. 
+Позволяет различать ошибки по программному коду, независимо от языка диагностического сообщения. 
 
 Definition in file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
 
@@ -45,11 +46,11 @@ enum class \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309d
 
 Коды ошибок проверки входных данных. 
 
-Каждый элемент перечисления обозначает определённую причину отказа валидации. \begin{DoxyEnumFields}[2]{Enumerator}
+\begin{DoxyEnumFields}[2]{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{EmptyTitle@{EmptyTitle}!ValidationError.h@{ValidationError.h}}
 \index{ValidationError.h@{ValidationError.h}!EmptyTitle@{EmptyTitle}}
 }\Hypertarget{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}\label{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97} 
-Empty\+Title&Название сервиса пустое. \\
+Empty\+Title&Пустое название сервиса. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{WhitespaceTitle@{WhitespaceTitle}!ValidationError.h@{ValidationError.h}}
@@ -58,16 +59,23 @@ Empty\+Title&Название сервиса пустое. \\
 Whitespace\+Title&Название состоит из пробелов. \\
 \hline
 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WhitespaceUsername@{WhitespaceUsername}!ValidationError.h@{ValidationError.h}}
+\index{ValidationError.h@{ValidationError.h}!WhitespaceUsername@{WhitespaceUsername}}
+}\Hypertarget{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}\label{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992} 
+Whitespace\+Username&Логин состоит из пробелов. \\
+\hline
+
 \end{DoxyEnumFields}
 
 
-Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00028}{28}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
+Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00024}{24}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{EmptyTitle}},\ \ \ \ \ \ \ }
-\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{WhitespaceTitle}}\ \ \ }
-\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86a0cfa8c4c55364a4b2a987a566c1b9b97}{EmptyTitle}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86acb4365666c10345ce1a88bfc4cbc0339}{WhitespaceTitle}},\ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{WhitespaceUsername}}\ \ }
+\DoxyCodeLine{00028\ \};}
 
 \end{DoxyCode}

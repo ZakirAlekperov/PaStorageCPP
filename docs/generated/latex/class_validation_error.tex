@@ -2,7 +2,7 @@
 \hypertarget{class_validation_error}{}\label{class_validation_error}\index{ValidationError@{ValidationError}}
 
 
-Исключение, возникающее при ошибке валидации.  
+Исключение при некорректных входных данных.  
 
 
 
@@ -21,17 +21,17 @@ Inheritance diagram for Validation\+Error:\begin{figure}[H]
 \doxymbox{\hyperlink{class_validation_error_ad8c074d8f46a9af76669f68ac4bab453}{Validation\+Error}} (\doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} code, const std::\+string \&message)
 \begin{DoxyCompactList}\small\item\em Создаёт исключение валидации. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}} \doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}} () const noexcept
-\begin{DoxyCompactList}\small\item\em Возвращает программный код ошибки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Возвращает код ошибки. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Исключение, возникающее при ошибке валидации. 
+Исключение при некорректных входных данных. 
 
 Наследуется от std::\+invalid\+\_\+argument.
 
-Содержит программный код ошибки и текстовое описание, доступное через what(). 
+Содержит диагностическое сообщение и программный код ошибки. 
 
-Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00043}{43}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
+Definition at line \doxymbox{\hyperlink{_validation_error_8h_source_l00040}{40}} of file \doxymbox{\hyperlink{_validation_error_8h_source}{Validation\+Error.\+h}}.
 
 
 
@@ -48,24 +48,26 @@ Validation\+Error::\+\+Validation\+Error (\begin{DoxyParamCaption}\item[{\doxymb
 
 Создаёт исключение валидации. 
 
-Инициализирует исключение валидации.
-
 
 \begin{DoxyParams}{Parameters}
 {\em code} & Программный код ошибки. \\
 \hline
 {\em message} & Диагностическое сообщение.\\
 \hline
+{\em code} & Код ошибки валидации. \\
+\hline
+{\em message} & Диагностическое сообщение. \\
+\hline
 \end{DoxyParams}
-Передаёт текст ошибки конструктору std::\+invalid\+\_\+argument и сохраняет код ошибки. 
 
-Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00020}{20}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
+
+Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00024\ \ \ \ \ :\ std::invalid\_argument\{message\},}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ code\_\{\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}\}\ \{}
-\DoxyCodeLine{00026\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ :\ std::invalid\_argument\{message\},}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ code\_\{\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}\}\ \{}
+\DoxyCodeLine{00028\ \}}
 
 \end{DoxyCode}
 
@@ -81,24 +83,24 @@ Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00020}{20
 
 
 
-Возвращает программный код ошибки. 
+Возвращает код ошибки. 
 
-Возвращает код ошибки.
+Возвращает программный код ошибки.
 
 \begin{DoxyReturn}{Returns}
-Код, переданный конструктору.
+Значение \doxylink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}.
 
-Сохранённое значение \doxylink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86}{Validation\+Error\+Code}. 
+Код ошибки, сохранённый при создании. 
 \end{DoxyReturn}
 
 
-Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00033}{33}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
+Definition at line \doxymbox{\hyperlink{_validation_error_8cpp_source_l00035}{35}} of file \doxymbox{\hyperlink{_validation_error_8cpp_source}{Validation\+Error.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ code\_;}
-\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ code\_;}
+\DoxyCodeLine{00037\ \}}
 
 \end{DoxyCode}
 

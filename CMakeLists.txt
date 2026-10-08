@@ -39,11 +39,18 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Модуль для получения внешних зависимостей.
 include(FetchContent)
 
-# Фиксируем версию GoogleTest конкретным Git-коммитом.
+
+# Подключение фиксированной версии GoogleTest.
+#
+# DOWNLOAD_EXTRACT_TIMESTAMP TRUE устанавливает
+# для распакованных файлов время извлечения,
+# что помогает корректно обнаруживать изменения.
 FetchContent_Declare(
     googletest
     URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
+
 
 # Настройка совместимости runtime-библиотек на Windows.
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
@@ -55,18 +62,20 @@ FetchContent_MakeAvailable(googletest)
 # Библиотека ядра PaStorage
 # ============================================================
 
-# Библиотека бизнес-логики PaStorage.
+
+# Библиотека ядра PaStorage.
 #
-# PasswordEntry:
-#   Хранение данных учётной записи.
-#
-# TitleValidator:
-#   Проверка названий сервисов.
+# PasswordEntry — модель учётной записи.
+# TitleValidator — проверка названия сервиса.
+# ValidationError — типизированные исключения.
+# UsernameValidator — проверка имени пользователя.
 add_library(pastorage_core
     src/core/PasswordEntry.cpp
     src/core/TitleValidator.cpp
     src/core/ValidationError.cpp
+    src/core/UsernameValidator.cpp
 )
+
 
 # Публичный путь к заголовочным файлам ядра.
 # PUBLIC передаёт путь зависимым целям.
@@ -95,6 +104,7 @@ add_executable(pastorage_tests
     tests/PasswordEntryTest.cpp
     tests/TitleValidatorTest.cpp
     tests/ValidationErrorTest.cpp
+    tests/UsernameValidatorTest.cpp
 )
 
 

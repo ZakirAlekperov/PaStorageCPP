@@ -7,6 +7,8 @@ var _password_entry_test_8cpp =
     [ "TEST", "_password_entry_test_8cpp.html#a04f4a75ffc016627a40d3f9d3d4be784", null ],
     [ "TEST", "_password_entry_test_8cpp.html#a21f72374c25aa3bf69bfb1d158c444ea", null ],
     [ "TEST", "_password_entry_test_8cpp.html#ab9db3d08906fe82e4efec352347a8841", null ],
+    [ "TEST", "_password_entry_test_8cpp.html#ae0e511562e1dfb3261bbf2dee012d9b7", null ],
+    [ "TEST", "_password_entry_test_8cpp.html#aad73ef7a298382c8beb2de654c1263ca", null ],
     [ "TEST", "_password_entry_test_8cpp.html#a18c9bf669cfb0f027415d9ea652925c8", null ],
     [ "TEST", "_password_entry_test_8cpp.html#acf73b0a39b664b14daa923816a3686ee", null ],
     [ "TEST", "_password_entry_test_8cpp.html#a410c9fec39e31c36daa249efbd39b721", null ]

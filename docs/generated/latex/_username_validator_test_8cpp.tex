@@ -1,0 +1,207 @@
+\doxysection{tests/\+\+Username\+Validator\+Test.cpp File Reference}
+\hypertarget{_username_validator_test_8cpp}{}\label{_username_validator_test_8cpp}\index{tests/UsernameValidatorTest.cpp@{tests/UsernameValidatorTest.cpp}}
+
+
+Модульные тесты проверки имён пользователей.  
+
+
+{\ttfamily \+\#include $<$gtest/\+gtest.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include "{}core/\+\+Username\+Validator.\+h"{}}\newline
+{\ttfamily \+\#include "{}core/\+\+Validation\+Error.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_a1c737cab41088d6d9fa859412122b066}{TEST}} (Username\+Validator\+Test, Accepts\+Empty\+Username)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость пустого имени пользователя. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_a68e3651dc325eb9e7c22e09ba98254dc}{TEST}} (Username\+Validator\+Test, Rejects\+Whitespace\+Username)
+\begin{DoxyCompactList}\small\item\em Проверяет запрет имени пользователя из пробелов. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_a0a6e95ef9a6841babf1a64f0dd3323c0}{TEST}} (Username\+Validator\+Test, Accepts\+Regular\+Username)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость обычного логина. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_abc0f165d67e52c2909d24fb81870e949}{TEST}} (Username\+Validator\+Test, Accepts\+Email\+Username)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость логина в форме email. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_a5d8f1847eb205b3bf2b66f06485cb572}{TEST}} (Username\+Validator\+Test, Rejects\+Mixed\+Whitespace)
+\begin{DoxyCompactList}\small\item\em Проверяет запрет различных пробельных символов. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{_username_validator_test_8cpp_ac4683a423a8d8f28872df2d3eb87a1ea}{TEST}} (Username\+Validator\+Test, Returns\+Whitespace\+Username\+Code)
+\begin{DoxyCompactList}\small\item\em Проверяет программный код ошибки username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модульные тесты проверки имён пользователей. 
+
+Проверяет правила допустимости username.
+
+Пустые имена пользователей разрешены. Значения, состоящие исключительно из ASCII-\/пробельных символов, должны отклоняться. 
+
+Definition in file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+
+\label{_username_validator_test_8cpp_doc-func-members}
+\Hypertarget{_username_validator_test_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_username_validator_test_8cpp_abc0f165d67e52c2909d24fb81870e949}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_abc0f165d67e52c2909d24fb81870e949} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Accepts\+Email\+Username}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет допустимость логина в форме email. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000021}{Test}}]Username\+Validator\+Test.\+Accepts\+Email\+Username \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00065}{65}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}user@example.com"{}})}
+\DoxyCodeLine{00068\ \ \ \ \ );}
+\DoxyCodeLine{00069\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_username_validator_test_8cpp_a1c737cab41088d6d9fa859412122b066}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_a1c737cab41088d6d9fa859412122b066} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Accepts\+Empty\+Username}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет допустимость пустого имени пользователя. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000018}{Test}}]Username\+Validator\+Test.\+Accepts\+Empty\+Username \end{DoxyRefDesc}
+
+
+Отсутствие логина является допустимым состоянием записи Pa\+Storage. 
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00029}{29}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00032\ \ \ \ \ );}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_username_validator_test_8cpp_a0a6e95ef9a6841babf1a64f0dd3323c0}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_a0a6e95ef9a6841babf1a64f0dd3323c0} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Accepts\+Regular\+Username}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет допустимость обычного логина. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000020}{Test}}]Username\+Validator\+Test.\+Accepts\+Regular\+Username \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00055}{55}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ EXPECT\_NO\_THROW(}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}zakir"{}})}
+\DoxyCodeLine{00058\ \ \ \ \ );}
+\DoxyCodeLine{00059\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_username_validator_test_8cpp_a5d8f1847eb205b3bf2b66f06485cb572}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_a5d8f1847eb205b3bf2b66f06485cb572} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Rejects\+Mixed\+Whitespace}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет запрет различных пробельных символов. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000022}{Test}}]Username\+Validator\+Test.\+Rejects\+Mixed\+Whitespace \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00075}{75}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\ "{}}),}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}}
+\DoxyCodeLine{00079\ \ \ \ \ );}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_username_validator_test_8cpp_a68e3651dc325eb9e7c22e09ba98254dc}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_a68e3651dc325eb9e7c22e09ba98254dc} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Rejects\+Whitespace\+Username}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет запрет имени пользователя из пробелов. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000019}{Test}}]Username\+Validator\+Test.\+Rejects\+Whitespace\+Username \end{DoxyRefDesc}
+
+
+Строка, состоящая только из ASCII-\/пробельных символов, должна вызывать исключение \doxylink{class_validation_error}{Validation\+Error}. 
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00043}{43}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ EXPECT\_THROW(}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}}),}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}}
+\DoxyCodeLine{00047\ \ \ \ \ );}
+\DoxyCodeLine{00048\ \}}
+
+\end{DoxyCode}
+\Hypertarget{_username_validator_test_8cpp_ac4683a423a8d8f28872df2d3eb87a1ea}\index{UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!UsernameValidatorTest.cpp@{UsernameValidatorTest.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{_username_validator_test_8cpp_ac4683a423a8d8f28872df2d3eb87a1ea} 
+TEST (\begin{DoxyParamCaption}\item[{Username\+Validator\+Test}]{}{, }\item[{Returns\+Whitespace\+Username\+Code}]{}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет программный код ошибки username. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\doxymbox{\hyperlink{test__test000023}{Test}}]Username\+Validator\+Test.\+Returns\+Whitespace\+Username\+Code \end{DoxyRefDesc}
+
+
+Проверяет, что ошибка имеет код Whitespace\+Username, независимо от локализованного текста сообщения. 
+
+Definition at line \doxymbox{\hyperlink{_username_validator_test_8cpp_source_l00090}{90}} of file \doxymbox{\hyperlink{_username_validator_test_8cpp_source}{Username\+Validator\+Test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{UsernameValidator::validate}}(\textcolor{stringliteral}{"{}\ \ \ "{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ FAIL()\ <<\ \textcolor{stringliteral}{"{}Ожидалось\ исключение\ ValidationError"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_validation_error}{ValidationError}}\&\ error)\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ EXPECT\_EQ(}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ error.\doxymbox{\hyperlink{class_validation_error_a8fe3decf50b39b3bc9de605a5a16e203}{code}}(),}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{ValidationErrorCode::WhitespaceUsername}}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00100\ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}

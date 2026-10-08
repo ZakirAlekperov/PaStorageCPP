@@ -1018,4 +1018,5 @@ CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.o: \
   /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
   /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
-  /Users/zakiralekperov/Documents/PaStorage/src/core/PasswordEntry.h
+  /Users/zakiralekperov/Documents/PaStorage/src/core/PasswordEntry.h \
+  /Users/zakiralekperov/Documents/PaStorage/src/core/ValidationError.h

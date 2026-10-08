@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_validati
 </div><!--header-->
 <div class="contents">
 
-<p>Исключение, возникающее при ошибке валидации.  
+<p>Исключение при некорректных входных данных.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>&gt;</code></p>
@@ -130,14 +130,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8c074d8f46a9af76669f68ac4bab453" id="r_ad8c074d8f46a9af76669f68ac4bab453"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad8c074d8f46a9af76669f68ac4bab453">ValidationError</a> (<a class="el" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86">ValidationErrorCode</a> code, const std::string &amp;message)</td></tr>
 <tr class="memdesc:ad8c074d8f46a9af76669f68ac4bab453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт исключение валидации.  <br /></td></tr>
 <tr class="memitem:a8fe3decf50b39b3bc9de605a5a16e203" id="r_a8fe3decf50b39b3bc9de605a5a16e203"><td class="memItemLeft"><a class="el" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86">ValidationErrorCode</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8fe3decf50b39b3bc9de605a5a16e203">code</a> () const noexcept</td></tr>
-<tr class="memdesc:a8fe3decf50b39b3bc9de605a5a16e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает программный код ошибки.  <br /></td></tr>
+<tr class="memdesc:a8fe3decf50b39b3bc9de605a5a16e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает код ошибки.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Исключение, возникающее при ошибке валидации. </p>
+<div class="textblock"><p>Исключение при некорректных входных данных. </p>
 <p>Наследуется от std::invalid_argument.</p>
-<p>Содержит программный код ошибки и текстовое описание, доступное через what(). </p>
+<p>Содержит диагностическое сообщение и программный код ошибки. </p>
 
-<p class="definition">Definition at line <a class="el" href="_validation_error_8h_source.html#l00043">43</a> of file <a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_validation_error_8h_source.html#l00040">40</a> of file <a class="el" href="_validation_error_8h_source.html">ValidationError.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad8c074d8f46a9af76669f68ac4bab453" name="ad8c074d8f46a9af76669f68ac4bab453"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8c074d8f46a9af76669f68ac4bab453">&#9670;&#160;</a></span>ValidationError()</h2>
@@ -159,21 +159,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Создаёт исключение валидации. </p>
-<p>Инициализирует исключение валидации.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>Программный код ошибки. </td></tr>
     <tr><td class="paramname">message</td><td>Диагностическое сообщение.</td></tr>
+    <tr><td class="paramname">code</td><td>Код ошибки валидации. </td></tr>
+    <tr><td class="paramname">message</td><td>Диагностическое сообщение. </td></tr>
   </table>
   </dd>
 </dl>
-<p>Передаёт текст ошибки конструктору std::invalid_argument и сохраняет код ошибки. </p>
 
-<p class="definition">Definition at line <a class="el" href="_validation_error_8cpp_source.html#l00020">20</a> of file <a class="el" href="_validation_error_8cpp_source.html">ValidationError.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>    : std::invalid_argument{message},</div>
-<div class="line"><span class="lineno">   25</span>      code_{<a class="code hl_function" href="#a8fe3decf50b39b3bc9de605a5a16e203">code</a>} {</div>
-<div class="line"><span class="lineno">   26</span>}</div>
-<div class="ttc" id="aclass_validation_error_html_a8fe3decf50b39b3bc9de605a5a16e203"><div class="ttname"><a href="#a8fe3decf50b39b3bc9de605a5a16e203">ValidationError::code</a></div><div class="ttdeci">ValidationErrorCode code() const noexcept</div><div class="ttdoc">Возвращает программный код ошибки.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8cpp_source.html#l00033">ValidationError.cpp:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_validation_error_8cpp_source.html#l00022">22</a> of file <a class="el" href="_validation_error_8cpp_source.html">ValidationError.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    : std::invalid_argument{message},</div>
+<div class="line"><span class="lineno">   27</span>      code_{<a class="code hl_function" href="#a8fe3decf50b39b3bc9de605a5a16e203">code</a>} {</div>
+<div class="line"><span class="lineno">   28</span>}</div>
+<div class="ttc" id="aclass_validation_error_html_a8fe3decf50b39b3bc9de605a5a16e203"><div class="ttname"><a href="#a8fe3decf50b39b3bc9de605a5a16e203">ValidationError::code</a></div><div class="ttdeci">ValidationErrorCode code() const noexcept</div><div class="ttdoc">Возвращает код ошибки.</div><div class="ttdef"><b>Definition</b> <a href="_validation_error_8cpp_source.html#l00035">ValidationError.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,16 +201,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Возвращает программный код ошибки. </p>
-<p>Возвращает код ошибки.</p>
-<dl class="section return"><dt>Returns</dt><dd>Код, переданный конструктору.</dd>
+<p>Возвращает код ошибки. </p>
+<p>Возвращает программный код ошибки.</p>
+<dl class="section return"><dt>Returns</dt><dd>Значение <a class="el" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86" title="Коды ошибок проверки входных данных.">ValidationErrorCode</a>.</dd>
 <dd>
-Сохранённое значение <a class="el" href="_validation_error_8h.html#acfe7b59a2a3fdbe0815d07309dd15f86" title="Коды ошибок проверки входных данных.">ValidationErrorCode</a>. </dd></dl>
+Код ошибки, сохранённый при создании. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_validation_error_8cpp_source.html#l00033">33</a> of file <a class="el" href="_validation_error_8cpp_source.html">ValidationError.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                         {</div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> code_;</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_validation_error_8cpp_source.html#l00035">35</a> of file <a class="el" href="_validation_error_8cpp_source.html">ValidationError.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                         {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> code_;</div>
+<div class="line"><span class="lineno">   37</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

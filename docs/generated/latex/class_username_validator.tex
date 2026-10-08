@@ -1,0 +1,89 @@
+\doxysection{Username\+Validator Class Reference}
+\hypertarget{class_username_validator}{}\label{class_username_validator}\index{UsernameValidator@{UsernameValidator}}
+
+
+Проверяет корректность имени пользователя.  
+
+
+
+
+{\ttfamily \+\#include $<$Username\+Validator.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}{validate}} (std::\+string\+\_\+view username)
+\begin{DoxyCompactList}\small\item\em Проверяет допустимость username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Проверяет корректность имени пользователя. 
+
+Допускает пустые имена пользователей.
+
+Непустое имя должно содержать хотя бы один символ, отличный от ASCII-\/пробельных.
+
+Класс не хранит состояние. 
+
+Definition at line \doxymbox{\hyperlink{_username_validator_8h_source_l00030}{30}} of file \doxymbox{\hyperlink{_username_validator_8h_source}{Username\+Validator.\+h}}.
+
+
+
+\label{class_username_validator_doc-func-members}
+\Hypertarget{class_username_validator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541}\index{UsernameValidator@{UsernameValidator}!validate@{validate}}
+\index{validate@{validate}!UsernameValidator@{UsernameValidator}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_username_validator_ad03b1c627ad29cd9205f29e6c23ee541} 
+void Username\+Validator::\+validate (\begin{DoxyParamCaption}\item[{std::\+string\+\_\+view}]{username}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверяет допустимость username. 
+
+Проверяет корректность имени пользователя.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Проверяемое имя пользователя.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_validation_error}{Validation\+Error}} & Если непустое имя состоит исключительно из ASCII-\/пробельных символов.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+Метод не изменяет исходную строку.
+\end{DoxyNote}
+Пустое имя допускается.
+
+Если строка непустая, она должна содержать хотя бы один непробельный ASCII-\/символ. 
+
+Definition at line \doxymbox{\hyperlink{_username_validator_8cpp_source_l00025}{25}} of file \doxymbox{\hyperlink{_username_validator_8cpp_source}{Username\+Validator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (username.empty())\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (username.find\_first\_not\_of(\textcolor{stringliteral}{"{}\ \(\backslash\)t\(\backslash\)n\(\backslash\)r\(\backslash\)f\(\backslash\)v"{}})}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ ==\ std::string\_view::npos)\ \{}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ ValidationError\{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{_validation_error_8h_acfe7b59a2a3fdbe0815d07309dd15f86aa3cd3dcc8dc7c4c03d9af19da58d2992}{ValidationErrorCode::WhitespaceUsername}},}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Имя\ пользователя\ не\ может\ состоять\ из\ пробелов."{}}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/\+core/\doxymbox{\hyperlink{_username_validator_8h}{Username\+Validator.\+h}}\item 
+src/\+core/\doxymbox{\hyperlink{_username_validator_8cpp}{Username\+Validator.\+cpp}}\end{DoxyCompactItemize}

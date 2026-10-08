@@ -160,12 +160,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/pastorage_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=11,12,13,14 "Built target pastorage_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target pastorage_core"
 .PHONY : CMakeFiles/pastorage_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pastorage_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pastorage_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 0
 .PHONY : CMakeFiles/pastorage_core.dir/rule
@@ -177,7 +177,7 @@ pastorage_core: CMakeFiles/pastorage_core.dir/rule
 # codegen rule for target.
 CMakeFiles/pastorage_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=11,12,13,14 "Finished codegen for target pastorage_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=11,12,13,14,15 "Finished codegen for target pastorage_core"
 .PHONY : CMakeFiles/pastorage_core.dir/codegen
 
 # clean rule for target.
@@ -197,7 +197,7 @@ CMakeFiles/PaStorage.dir/all: CMakeFiles/pastorage_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PaStorage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PaStorage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 0
 .PHONY : CMakeFiles/PaStorage.dir/rule
@@ -226,12 +226,12 @@ CMakeFiles/pastorage_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles
 CMakeFiles/pastorage_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=15,16,17,18 "Built target pastorage_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=16,17,18,19,20 "Built target pastorage_tests"
 .PHONY : CMakeFiles/pastorage_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pastorage_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pastorage_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles 0
 .PHONY : CMakeFiles/pastorage_tests.dir/rule
@@ -243,7 +243,7 @@ pastorage_tests: CMakeFiles/pastorage_tests.dir/rule
 # codegen rule for target.
 CMakeFiles/pastorage_tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=15,16,17,18 "Finished codegen for target pastorage_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakiralekperov/Documents/PaStorage/build/CMakeFiles --progress-num=16,17,18,19,20 "Finished codegen for target pastorage_tests"
 .PHONY : CMakeFiles/pastorage_tests.dir/codegen
 
 # clean rule for target.

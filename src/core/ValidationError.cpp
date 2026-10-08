@@ -1,21 +1,23 @@
 
 /**
  * @file ValidationError.cpp
- * @brief Реализация типизированных исключений.
+ * @brief Реализация типизированных исключений валидации.
  *
  * @details
- * Обеспечивает хранение кода ошибки и передачу
- * диагностического сообщения базовому классу.
+ * Реализует конструктор ValidationError и метод
+ * получения программного кода ошибки.
+ *
+ * Диагностическое сообщение передаётся базовому
+ * классу std::invalid_argument.
  */
 
 #include "ValidationError.h"
 
 /**
- * @brief Инициализирует исключение валидации.
+ * @brief Создаёт исключение валидации.
  *
- * @details
- * Передаёт текст ошибки конструктору
- * std::invalid_argument и сохраняет код ошибки.
+ * @param code Код ошибки валидации.
+ * @param message Диагностическое сообщение.
  */
 ValidationError::ValidationError(
     ValidationErrorCode code,
@@ -26,9 +28,9 @@ ValidationError::ValidationError(
 }
 
 /**
- * @brief Возвращает код ошибки.
+ * @brief Возвращает программный код ошибки.
  *
- * @return Сохранённое значение ValidationErrorCode.
+ * @return Код ошибки, сохранённый при создании.
  */
 ValidationErrorCode ValidationError::code() const noexcept {
     return code_;

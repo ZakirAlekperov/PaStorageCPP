@@ -12,7 +12,10 @@
  * к публичному интерфейсу PasswordEntry.
  */
 #include <gtest/gtest.h>
+
 #include "core/PasswordEntry.h"
+#include "core/ValidationError.h"
+
 #include <stdexcept>
 
 /**
@@ -211,4 +214,50 @@ TEST(PasswordEntryTest, PreservesTitleWithSurroundingSpaces) {
     PasswordEntry entry{"  GitHub  ", "user@example.com"};
 
     EXPECT_EQ(entry.title(), "  GitHub  ");
+}
+
+
+
+/**
+ * @test PasswordEntryTest.RejectsWhitespaceUsernameOnCreation
+ * @brief Проверяет валидацию имени при создании записи.
+ *
+ * @details
+ * Попытка создать запись с логином из пробелов
+ * должна завершиться исключением ValidationError.
+ */
+TEST(PasswordEntryTest, RejectsWhitespaceUsernameOnCreation) {
+    EXPECT_THROW(
+        (PasswordEntry{"GitHub", "   "}),
+        ValidationError
+    );
+}
+
+
+
+/**
+ * @test PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate
+ * @brief Проверяет отклонение некорректного нового логина.
+ *
+ * @details
+ * Создаёт корректную запись и пытается заменить
+ * имя пользователя строкой из пробелов.
+ *
+ * Ожидается исключение ValidationError.
+ *
+ * Дополнительно проверяется, что прежнее значение
+ * username не изменилось после неудачной операции.
+ */
+TEST(PasswordEntryTest, RejectsWhitespaceUsernameOnUpdate) {
+    PasswordEntry entry{"GitHub", "old@example.com"};
+
+    EXPECT_THROW(
+        entry.setUsername("   "),
+        ValidationError
+    );
+
+    EXPECT_EQ(
+        entry.username(),
+        "old@example.com"
+    );
 }
