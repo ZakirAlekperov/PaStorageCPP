@@ -261,3 +261,80 @@ TEST(PasswordEntryTest, RejectsWhitespaceUsernameOnUpdate) {
         "old@example.com"
     );
 }
+
+
+
+/**
+ * @test PasswordEntryTest.PreservesUsernameOnValidationFailure
+ * @brief Проверяет сохранение логина при ошибке валидации.
+ *
+ * @details
+ * Создаёт запись с корректным логином и пытается
+ * заменить его строкой из пробельных символов.
+ *
+ * Проверяет:
+ * - тип исключения ValidationError;
+ * - программный код WhitespaceUsername;
+ * - сохранение прежнего имени пользователя;
+ * - неизменность названия сервиса.
+ */
+TEST(PasswordEntryTest, PreservesUsernameOnValidationFailure) {
+    PasswordEntry entry{"GitHub", "old@example.com"};
+
+    try {
+        entry.setUsername("   ");
+        FAIL() << "Ожидалось исключение ValidationError";
+    }
+    catch (const ValidationError& error) {
+        EXPECT_EQ(
+            error.code(),
+            ValidationErrorCode::WhitespaceUsername
+        );
+    }
+
+    EXPECT_EQ(entry.username(), "old@example.com");
+    EXPECT_EQ(entry.title(), "GitHub");
+}
+
+
+
+/**
+ * @test PasswordEntryTest.AllowsClearingUsername
+ * @brief Проверяет возможность очистки имени пользователя.
+ *
+ * @details
+ * Создаёт запись с непустым именем пользователя,
+ * затем заменяет его пустой строкой.
+ *
+ * Проверяет успешное выполнение операции
+ * и сохранение названия сервиса.
+ */
+TEST(PasswordEntryTest, AllowsClearingUsername) {
+    PasswordEntry entry{"GitHub", "user@example.com"};
+
+    EXPECT_NO_THROW(entry.setUsername(""));
+
+    EXPECT_TRUE(entry.username().empty());
+    EXPECT_EQ(entry.title(), "GitHub");
+}
+
+
+/**
+ * @test PasswordEntryTest.UpdatesOnlySelectedEntry
+ * @brief Проверяет независимость экземпляров PasswordEntry.
+ *
+ * @details
+ * Создаёт две записи с разными логинами.
+ *
+ * Изменение логина первой записи не должно
+ * затрагивать вторую запись.
+ */
+TEST(PasswordEntryTest, UpdatesOnlySelectedEntry) {
+    PasswordEntry first{"GitHub", "first@example.com"};
+    PasswordEntry second{"GitLab", "second@example.com"};
+
+    first.setUsername("updated@example.com");
+
+    EXPECT_EQ(first.username(), "updated@example.com");
+    EXPECT_EQ(second.username(), "second@example.com");
+}

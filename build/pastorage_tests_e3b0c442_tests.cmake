@@ -106,6 +106,33 @@ set_tests_properties([=[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
+add_test([=[PasswordEntryTest.PreservesUsernameOnValidationFailure]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.PreservesUsernameOnValidationFailure]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.PreservesUsernameOnValidationFailure]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:281]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PasswordEntryTest.AllowsClearingUsername]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.AllowsClearingUsername]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.AllowsClearingUsername]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:312]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PasswordEntryTest.UpdatesOnlySelectedEntry]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=PasswordEntryTest.UpdatesOnlySelectedEntry]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PasswordEntryTest.UpdatesOnlySelectedEntry]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[/Users/zakiralekperov/Documents/PaStorage/tests/PasswordEntryTest.cpp:332]==]
+    WORKING_DIRECTORY [==[/Users/zakiralekperov/Documents/PaStorage/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[TitleValidatorTest.AcceptsValidTitle]=]  /Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests [==[--gtest_filter=TitleValidatorTest.AcceptsValidTitle]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[TitleValidatorTest.AcceptsValidTitle]=]
   PROPERTIES
@@ -232,4 +259,4 @@ set_tests_properties([=[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==] [==[UsernameValidatorTest.AcceptsEmptyUsername]==] [==[UsernameValidatorTest.RejectsWhitespaceUsername]==] [==[UsernameValidatorTest.AcceptsRegularUsername]==] [==[UsernameValidatorTest.AcceptsEmailUsername]==] [==[UsernameValidatorTest.RejectsMixedWhitespace]==] [==[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==])
+set(pastorage_tests_TESTS [==[PasswordEntryTest.StoresTitle]==] [==[PasswordEntryTest.StoresUsername]==] [==[PasswordEntryTest.UpdatesUsername]==] [==[PasswordEntryTest.RejectsEmptyTitle]==] [==[PasswordEntryTest.RejectsEmptyTitleWithoutUsername]==] [==[PasswordEntryTest.RejectsEmptyTitleWithUsername]==] [==[PasswordEntryTest.RejectsWhitespaceOnlyTitle]==] [==[PasswordEntryTest.EmptyTitleHasSpecificError]==] [==[PasswordEntryTest.RejectsMixedWhitespaceTitle]==] [==[PasswordEntryTest.PreservesTitleWithSurroundingSpaces]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnCreation]==] [==[PasswordEntryTest.RejectsWhitespaceUsernameOnUpdate]==] [==[PasswordEntryTest.PreservesUsernameOnValidationFailure]==] [==[PasswordEntryTest.AllowsClearingUsername]==] [==[PasswordEntryTest.UpdatesOnlySelectedEntry]==] [==[TitleValidatorTest.AcceptsValidTitle]==] [==[TitleValidatorTest.RejectsEmptyTitle]==] [==[TitleValidatorTest.RejectsWhitespaceTitle]==] [==[TitleValidatorTest.AcceptsSurroundingSpaces]==] [==[TitleValidatorTest.DistinguishesValidationErrors]==] [==[TitleValidatorTest.EmptyTitleHasErrorCode]==] [==[TitleValidatorTest.WhitespaceTitleHasErrorCode]==] [==[ValidationErrorTest.StoresErrorCode]==] [==[UsernameValidatorTest.AcceptsEmptyUsername]==] [==[UsernameValidatorTest.RejectsWhitespaceUsername]==] [==[UsernameValidatorTest.AcceptsRegularUsername]==] [==[UsernameValidatorTest.AcceptsEmailUsername]==] [==[UsernameValidatorTest.RejectsMixedWhitespace]==] [==[UsernameValidatorTest.ReturnsWhitespaceUsernameCode]==])
