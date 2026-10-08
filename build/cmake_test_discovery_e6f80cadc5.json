@@ -1,5 +1,5 @@
 {
-  "tests": 10,
+  "tests": 15,
   "name": "AllTests",
   "testsuites": [
     {
@@ -55,6 +55,37 @@
           "name": "PreservesTitleWithSurroundingSpaces",
           "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/PasswordEntryTest.cpp",
           "line": 210
+        }
+      ]
+    },
+    {
+      "name": "TitleValidatorTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "AcceptsValidTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
+          "line": 24
+        },
+        {
+          "name": "RejectsEmptyTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
+          "line": 34
+        },
+        {
+          "name": "RejectsWhitespaceTitle",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
+          "line": 45
+        },
+        {
+          "name": "AcceptsSurroundingSpaces",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
+          "line": 56
+        },
+        {
+          "name": "DistinguishesValidationErrors",
+          "file": "\/Users\/zakiralekperov\/Documents\/PaStorage\/tests\/TitleValidatorTest.cpp",
+          "line": 70
         }
       ]
     }

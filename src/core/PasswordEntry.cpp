@@ -13,6 +13,7 @@
  */
 
 #include "PasswordEntry.h"
+#include "TitleValidator.h"
 
 #include <exception>
 #include <string>
@@ -30,26 +31,23 @@ PasswordEntry::PasswordEntry(std::string title)
     : PasswordEntry{std::move(title), ""} {
 }
 
+
 /**
- * @brief Создаёт запись с названием и именем пользователя.
+ * @brief Создаёт запись с названием и логином.
  *
  * @details
- * Инициализирует внутренние поля переданными
- * значениями с использованием семантики перемещения.
+ * Инициализирует поля объекта посредством
+ * перемещения переданных строк.
  *
- * После инициализации проверяет название сервиса.
- * Если оно пустое, создание объекта прерывается
- * исключением std::invalid_argument.
+ * Проверка названия делегируется TitleValidator.
+ * При некорректном названии конструктор выбрасывает
+ * исключение и объект не создаётся.
  *
  * @param title Название сервиса.
  * @param username Имя пользователя.
  *
- * @pre Название сервиса должно содержать хотя бы
- *      один символ, отличный от ASCII-пробельных.
- *
  * @throws std::invalid_argument
- *         Если название сервиса пустое.
- *         Если название состоит из пробелов.
+ *         Если название сервиса некорректно.
  */
 PasswordEntry::PasswordEntry(
     std::string title,
@@ -57,18 +55,10 @@ PasswordEntry::PasswordEntry(
 )
     : title_{std::move(title)},
       username_{std::move(username)} {
-          if (title_.empty()) {
-              throw std::invalid_argument{
-                  "Название сервиса не может быть пустым."
-              };
-          }
 
-          if (title_.find_first_not_of(" \t\n\r\f\v") == std::string::npos){
-              throw std::invalid_argument{
-                  "Название сервиса не может состоять из пробелов."
-              };
-          }
+    TitleValidator::validate(title_);
 }
+
 
 /**
  * @brief Предоставляет копию названия сервиса.

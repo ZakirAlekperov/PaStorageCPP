@@ -1,12 +1,17 @@
 pastorage_tests_NOT_BUILT 0 0
-PasswordEntryTest.StoresTitle 12 0.000855889
-PasswordEntryTest.StoresUsername 11 0.000464538
-PasswordEntryTest.UpdatesUsername 8 0.000575396
-PasswordEntryTest.RejectsEmptyTitle 7 0.000702518
-PasswordEntryTest.RejectsEmptyTitleWithoutUsername 6 0.000719993
-PasswordEntryTest.RejectsEmptyTitleWithUsername 5 0.000804958
-PasswordEntryTest.RejectsWhitespaceOnlyTitle 3 0.00138318
-PasswordEntryTest.EmptyTitleHasSpecificError 2 0.00195867
-PasswordEntryTest.RejectsMixedWhitespaceTitle 1 0.00413175
-PasswordEntryTest.PreservesTitleWithSurroundingSpaces 1 0.00394867
+PasswordEntryTest.StoresTitle 14 0.000720652
+PasswordEntryTest.StoresUsername 13 0.00040024
+PasswordEntryTest.UpdatesUsername 10 0.000508721
+PasswordEntryTest.RejectsEmptyTitle 9 0.000517074
+PasswordEntryTest.RejectsEmptyTitleWithoutUsername 8 0.000615156
+PasswordEntryTest.RejectsEmptyTitleWithUsername 7 0.000632256
+PasswordEntryTest.RejectsWhitespaceOnlyTitle 5 0.000853242
+PasswordEntryTest.EmptyTitleHasSpecificError 4 0.00109328
+PasswordEntryTest.RejectsMixedWhitespaceTitle 3 0.00137131
+PasswordEntryTest.PreservesTitleWithSurroundingSpaces 3 0.00137772
+TitleValidatorTest.AcceptsValidTitle 2 0.00196781
+TitleValidatorTest.RejectsEmptyTitle 2 0.00195046
+TitleValidatorTest.RejectsWhitespaceTitle 2 0.0021254
+TitleValidatorTest.AcceptsSurroundingSpaces 2 0.00207148
+TitleValidatorTest.DistinguishesValidationErrors 2 0.00196904
 ---

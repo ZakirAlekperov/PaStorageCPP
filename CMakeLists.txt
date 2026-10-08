@@ -55,10 +55,16 @@ FetchContent_MakeAvailable(googletest)
 # Библиотека ядра PaStorage
 # ============================================================
 
-# Создаём библиотеку бизнес-логики приложения.
-# Она не должна зависеть от графического интерфейса.
+# Библиотека бизнес-логики PaStorage.
+#
+# PasswordEntry:
+#   Хранение данных учётной записи.
+#
+# TitleValidator:
+#   Проверка названий сервисов.
 add_library(pastorage_core
     src/core/PasswordEntry.cpp
+    src/core/TitleValidator.cpp
 )
 
 # Публичный путь к заголовочным файлам ядра.
@@ -86,6 +92,7 @@ enable_testing()
 # Создаём отдельный исполняемый файл тестов.
 add_executable(pastorage_tests
     tests/PasswordEntryTest.cpp
+    tests/TitleValidatorTest.cpp
 )
 
 

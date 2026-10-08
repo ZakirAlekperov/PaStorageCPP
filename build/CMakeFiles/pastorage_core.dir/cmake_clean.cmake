@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.o"
   "CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.o.d"
+  "CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o"
+  "CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o.d"
   "libpastorage_core.a"
   "libpastorage_core.pdb"
 )

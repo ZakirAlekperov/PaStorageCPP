@@ -286,6 +286,30 @@ src/core/PasswordEntry.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/PasswordEntry.cpp.s
 .PHONY : src/core/PasswordEntry.cpp.s
 
+src/core/TitleValidator.o: src/core/TitleValidator.cpp.o
+.PHONY : src/core/TitleValidator.o
+
+# target to build an object file
+src/core/TitleValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.o
+.PHONY : src/core/TitleValidator.cpp.o
+
+src/core/TitleValidator.i: src/core/TitleValidator.cpp.i
+.PHONY : src/core/TitleValidator.i
+
+# target to preprocess a source file
+src/core/TitleValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.i
+.PHONY : src/core/TitleValidator.cpp.i
+
+src/core/TitleValidator.s: src/core/TitleValidator.cpp.s
+.PHONY : src/core/TitleValidator.s
+
+# target to generate assembly for a file
+src/core/TitleValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_core.dir/build.make CMakeFiles/pastorage_core.dir/src/core/TitleValidator.cpp.s
+.PHONY : src/core/TitleValidator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -334,6 +358,30 @@ tests/PasswordEntryTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/PasswordEntryTest.cpp.s
 .PHONY : tests/PasswordEntryTest.cpp.s
 
+tests/TitleValidatorTest.o: tests/TitleValidatorTest.cpp.o
+.PHONY : tests/TitleValidatorTest.o
+
+# target to build an object file
+tests/TitleValidatorTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.o
+.PHONY : tests/TitleValidatorTest.cpp.o
+
+tests/TitleValidatorTest.i: tests/TitleValidatorTest.cpp.i
+.PHONY : tests/TitleValidatorTest.i
+
+# target to preprocess a source file
+tests/TitleValidatorTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.i
+.PHONY : tests/TitleValidatorTest.cpp.i
+
+tests/TitleValidatorTest.s: tests/TitleValidatorTest.cpp.s
+.PHONY : tests/TitleValidatorTest.s
+
+# target to generate assembly for a file
+tests/TitleValidatorTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastorage_tests.dir/build.make CMakeFiles/pastorage_tests.dir/tests/TitleValidatorTest.cpp.s
+.PHONY : tests/TitleValidatorTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -357,12 +405,18 @@ help:
 	@echo "... src/core/PasswordEntry.o"
 	@echo "... src/core/PasswordEntry.i"
 	@echo "... src/core/PasswordEntry.s"
+	@echo "... src/core/TitleValidator.o"
+	@echo "... src/core/TitleValidator.i"
+	@echo "... src/core/TitleValidator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... tests/PasswordEntryTest.o"
 	@echo "... tests/PasswordEntryTest.i"
 	@echo "... tests/PasswordEntryTest.s"
+	@echo "... tests/TitleValidatorTest.o"
+	@echo "... tests/TitleValidatorTest.i"
+	@echo "... tests/TitleValidatorTest.s"
 .PHONY : help
 
 

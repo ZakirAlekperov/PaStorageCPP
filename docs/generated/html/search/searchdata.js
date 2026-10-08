@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "lmpstu",
-  1: "p",
-  2: "mp",
-  3: "mpstu",
+  0: "lmpstuv",
+  1: "pt",
+  2: "mpt",
+  3: "mpstuv",
   4: "lt"
 };
 

@@ -1,10 +1,10 @@
-Start testing: Oct 08 15:02 MSK
+Start testing: Oct 08 15:13 MSK
 ----------------------------------------------------------
-1/10 Testing: PasswordEntryTest.StoresTitle
-1/10 Test: PasswordEntryTest.StoresTitle
+1/15 Testing: PasswordEntryTest.StoresTitle
+1/15 Test: PasswordEntryTest.StoresTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresTitle" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.StoresTitle" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,15 +23,15 @@ Note: Google Test filter = PasswordEntryTest.StoresTitle
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresTitle" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.StoresTitle" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.StoresTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/10 Testing: PasswordEntryTest.StoresUsername
-2/10 Test: PasswordEntryTest.StoresUsername
+2/15 Testing: PasswordEntryTest.StoresUsername
+2/15 Test: PasswordEntryTest.StoresUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.StoresUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.StoresUsername" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.StoresUsername" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -50,15 +50,15 @@ Note: Google Test filter = PasswordEntryTest.StoresUsername
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.StoresUsername" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.StoresUsername" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.StoresUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/10 Testing: PasswordEntryTest.UpdatesUsername
-3/10 Test: PasswordEntryTest.UpdatesUsername
+3/15 Testing: PasswordEntryTest.UpdatesUsername
+3/15 Test: PasswordEntryTest.UpdatesUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.UpdatesUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.UpdatesUsername" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.UpdatesUsername" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -74,18 +74,18 @@ Note: Google Test filter = PasswordEntryTest.UpdatesUsername
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.UpdatesUsername" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.UpdatesUsername" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.UpdatesUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/10 Testing: PasswordEntryTest.RejectsEmptyTitle
-4/10 Test: PasswordEntryTest.RejectsEmptyTitle
+4/15 Testing: PasswordEntryTest.RejectsEmptyTitle
+4/15 Test: PasswordEntryTest.RejectsEmptyTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitle" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitle" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -104,15 +104,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitle" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitle" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.RejectsEmptyTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/10 Testing: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
-5/10 Test: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
+5/15 Testing: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
+5/15 Test: PasswordEntryTest.RejectsEmptyTitleWithoutUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithoutUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -131,15 +131,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitleWithoutUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithoutUsername" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.RejectsEmptyTitleWithoutUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/10 Testing: PasswordEntryTest.RejectsEmptyTitleWithUsername
-6/10 Test: PasswordEntryTest.RejectsEmptyTitleWithUsername
+6/15 Testing: PasswordEntryTest.RejectsEmptyTitleWithUsername
+6/15 Test: PasswordEntryTest.RejectsEmptyTitleWithUsername
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsEmptyTitleWithUsername" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsEmptyTitleWithUsername" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithUsername" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -158,15 +158,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsEmptyTitleWithUsername
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsEmptyTitleWithUsername" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsEmptyTitleWithUsername" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.RejectsEmptyTitleWithUsername" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/10 Testing: PasswordEntryTest.RejectsWhitespaceOnlyTitle
-7/10 Test: PasswordEntryTest.RejectsWhitespaceOnlyTitle
+7/15 Testing: PasswordEntryTest.RejectsWhitespaceOnlyTitle
+7/15 Test: PasswordEntryTest.RejectsWhitespaceOnlyTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsWhitespaceOnlyTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsWhitespaceOnlyTitle" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsWhitespaceOnlyTitle" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -185,15 +185,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsWhitespaceOnlyTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsWhitespaceOnlyTitle" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsWhitespaceOnlyTitle" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.RejectsWhitespaceOnlyTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/10 Testing: PasswordEntryTest.EmptyTitleHasSpecificError
-8/10 Test: PasswordEntryTest.EmptyTitleHasSpecificError
+8/15 Testing: PasswordEntryTest.EmptyTitleHasSpecificError
+8/15 Test: PasswordEntryTest.EmptyTitleHasSpecificError
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.EmptyTitleHasSpecificError" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.EmptyTitleHasSpecificError" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.EmptyTitleHasSpecificError" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -212,15 +212,15 @@ Note: Google Test filter = PasswordEntryTest.EmptyTitleHasSpecificError
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.EmptyTitleHasSpecificError" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.EmptyTitleHasSpecificError" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.EmptyTitleHasSpecificError" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/10 Testing: PasswordEntryTest.RejectsMixedWhitespaceTitle
-9/10 Test: PasswordEntryTest.RejectsMixedWhitespaceTitle
+9/15 Testing: PasswordEntryTest.RejectsMixedWhitespaceTitle
+9/15 Test: PasswordEntryTest.RejectsMixedWhitespaceTitle
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.RejectsMixedWhitespaceTitle" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.RejectsMixedWhitespaceTitle" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsMixedWhitespaceTitle" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -239,15 +239,15 @@ Note: Google Test filter = PasswordEntryTest.RejectsMixedWhitespaceTitle
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.RejectsMixedWhitespaceTitle" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.RejectsMixedWhitespaceTitle" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.RejectsMixedWhitespaceTitle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/10 Testing: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
-10/10 Test: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
+10/15 Testing: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
+10/15 Test: PasswordEntryTest.PreservesTitleWithSurroundingSpaces
 Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=PasswordEntryTest.PreservesTitleWithSurroundingSpaces" "--gtest_also_run_disabled_tests"
 Directory: /Users/zakiralekperov/Documents/PaStorage/build
-"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" start time: Oct 08 15:02 MSK
+"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" start time: Oct 08 15:13 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -266,8 +266,143 @@ Note: Google Test filter = PasswordEntryTest.PreservesTitleWithSurroundingSpaces
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" end time: Oct 08 15:02 MSK
+"PasswordEntryTest.PreservesTitleWithSurroundingSpaces" end time: Oct 08 15:13 MSK
 "PasswordEntryTest.PreservesTitleWithSurroundingSpaces" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 08 15:02 MSK
+11/15 Testing: TitleValidatorTest.AcceptsValidTitle
+11/15 Test: TitleValidatorTest.AcceptsValidTitle
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.AcceptsValidTitle" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"TitleValidatorTest.AcceptsValidTitle" start time: Oct 08 15:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TitleValidatorTest.AcceptsValidTitle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TitleValidatorTest
+[ RUN      ] TitleValidatorTest.AcceptsValidTitle
+[       OK ] TitleValidatorTest.AcceptsValidTitle (0 ms)
+[----------] 1 test from TitleValidatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TitleValidatorTest.AcceptsValidTitle" end time: Oct 08 15:13 MSK
+"TitleValidatorTest.AcceptsValidTitle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: TitleValidatorTest.RejectsEmptyTitle
+12/15 Test: TitleValidatorTest.RejectsEmptyTitle
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.RejectsEmptyTitle" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"TitleValidatorTest.RejectsEmptyTitle" start time: Oct 08 15:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TitleValidatorTest.RejectsEmptyTitle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TitleValidatorTest
+[ RUN      ] TitleValidatorTest.RejectsEmptyTitle
+[       OK ] TitleValidatorTest.RejectsEmptyTitle (0 ms)
+[----------] 1 test from TitleValidatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TitleValidatorTest.RejectsEmptyTitle" end time: Oct 08 15:13 MSK
+"TitleValidatorTest.RejectsEmptyTitle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: TitleValidatorTest.RejectsWhitespaceTitle
+13/15 Test: TitleValidatorTest.RejectsWhitespaceTitle
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.RejectsWhitespaceTitle" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"TitleValidatorTest.RejectsWhitespaceTitle" start time: Oct 08 15:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TitleValidatorTest.RejectsWhitespaceTitle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TitleValidatorTest
+[ RUN      ] TitleValidatorTest.RejectsWhitespaceTitle
+[       OK ] TitleValidatorTest.RejectsWhitespaceTitle (0 ms)
+[----------] 1 test from TitleValidatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TitleValidatorTest.RejectsWhitespaceTitle" end time: Oct 08 15:13 MSK
+"TitleValidatorTest.RejectsWhitespaceTitle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: TitleValidatorTest.AcceptsSurroundingSpaces
+14/15 Test: TitleValidatorTest.AcceptsSurroundingSpaces
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.AcceptsSurroundingSpaces" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"TitleValidatorTest.AcceptsSurroundingSpaces" start time: Oct 08 15:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TitleValidatorTest.AcceptsSurroundingSpaces
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TitleValidatorTest
+[ RUN      ] TitleValidatorTest.AcceptsSurroundingSpaces
+[       OK ] TitleValidatorTest.AcceptsSurroundingSpaces (0 ms)
+[----------] 1 test from TitleValidatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TitleValidatorTest.AcceptsSurroundingSpaces" end time: Oct 08 15:13 MSK
+"TitleValidatorTest.AcceptsSurroundingSpaces" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: TitleValidatorTest.DistinguishesValidationErrors
+15/15 Test: TitleValidatorTest.DistinguishesValidationErrors
+Command: "/Users/zakiralekperov/Documents/PaStorage/build/pastorage_tests" "--gtest_filter=TitleValidatorTest.DistinguishesValidationErrors" "--gtest_also_run_disabled_tests"
+Directory: /Users/zakiralekperov/Documents/PaStorage/build
+"TitleValidatorTest.DistinguishesValidationErrors" start time: Oct 08 15:13 MSK
+Output:
+----------------------------------------------------------
+Running main() from /Users/zakiralekperov/Documents/PaStorage/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TitleValidatorTest.DistinguishesValidationErrors
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TitleValidatorTest
+[ RUN      ] TitleValidatorTest.DistinguishesValidationErrors
+[       OK ] TitleValidatorTest.DistinguishesValidationErrors (0 ms)
+[----------] 1 test from TitleValidatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TitleValidatorTest.DistinguishesValidationErrors" end time: Oct 08 15:13 MSK
+"TitleValidatorTest.DistinguishesValidationErrors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 15:13 MSK
